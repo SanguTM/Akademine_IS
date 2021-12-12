@@ -10,3 +10,16 @@ F:\Paskaitos\Programavimo praktika 2\Akademine IS\Akademine IS\Akademine IS\obj\
 F:\Paskaitos\Programavimo praktika 2\Akademine IS\Akademine IS\Akademine IS\obj\Debug\Akademine IS.pdb
 F:\Paskaitos\Programavimo praktika 2\Akademine IS\Akademine IS\Akademine IS\obj\Debug\Akademine_IS.Admin_MainMenu.resources
 F:\Paskaitos\Programavimo praktika 2\Akademine IS\Akademine IS\Akademine IS\obj\Debug\Akademine_IS.Vartotojai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Debug\Akademine IS.exe.config
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Debug\Akademine IS.exe
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Debug\Akademine IS.pdb
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine IS.csprojAssemblyReference.cache
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine_IS.Vartotojai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine_IS.Login_screen.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine_IS.Admin_MainMenu.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine_IS.Properties.Resources.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine_IS.VartotojaiEdit.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine IS.csproj.GenerateResource.cache
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine IS.csproj.CoreCompileInputs.cache
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine IS.exe
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Debug\Akademine IS.pdb
