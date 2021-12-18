@@ -13,12 +13,14 @@ namespace Akademine_IS
     public partial class Admin_MainMenu : Form
     {
         private string usertype;
+        private string user;
 
         public Admin_MainMenu(string UserType, string User)
         {
             InitializeComponent();
             CurrentUser.Text = User;
             usertype = UserType;
+            user = User;
 
             Login_screen ls = new Login_screen();
             ls.Close();
@@ -26,7 +28,7 @@ namespace Akademine_IS
 
         private void Vartotojai_Click(object sender, EventArgs e)
         {
-            Vartotojai v = new Vartotojai(usertype, CurrentUser.Text);
+            Vartotojai v = new Vartotojai(usertype, user);
             v.ShowDialog();
         }
     }

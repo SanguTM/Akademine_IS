@@ -66,18 +66,18 @@ namespace Akademine_IS
             this.UserName.AutoSize = true;
             this.UserName.Location = new System.Drawing.Point(260, 152);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(54, 13);
+            this.UserName.Size = new System.Drawing.Size(57, 13);
             this.UserName.TabIndex = 4;
-            this.UserName.Text = "Vartotojas";
+            this.UserName.Text = "UserName";
             // 
             // Password
             // 
             this.Password.AutoSize = true;
             this.Password.Location = new System.Drawing.Point(260, 178);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(61, 13);
+            this.Password.Size = new System.Drawing.Size(53, 13);
             this.Password.TabIndex = 5;
-            this.Password.Text = "Slaptažodis";
+            this.Password.Text = "Password";
             // 
             // Login_screen
             // 
