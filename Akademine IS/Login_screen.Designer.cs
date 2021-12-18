@@ -60,24 +60,25 @@ namespace Akademine_IS
             this.PasswordBox.Size = new System.Drawing.Size(100, 20);
             this.PasswordBox.TabIndex = 3;
             this.PasswordBox.UseSystemPasswordChar = true;
+            this.PasswordBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PasswordBox_KeyDown);
             // 
             // UserName
             // 
             this.UserName.AutoSize = true;
             this.UserName.Location = new System.Drawing.Point(260, 152);
             this.UserName.Name = "UserName";
-            this.UserName.Size = new System.Drawing.Size(57, 13);
+            this.UserName.Size = new System.Drawing.Size(54, 13);
             this.UserName.TabIndex = 4;
-            this.UserName.Text = "UserName";
+            this.UserName.Text = "Vartotojas";
             // 
             // Password
             // 
             this.Password.AutoSize = true;
             this.Password.Location = new System.Drawing.Point(260, 178);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(53, 13);
+            this.Password.Size = new System.Drawing.Size(61, 13);
             this.Password.TabIndex = 5;
-            this.Password.Text = "Password";
+            this.Password.Text = "Slaptažodis";
             // 
             // Login_screen
             // 

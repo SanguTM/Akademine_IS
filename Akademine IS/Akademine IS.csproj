@@ -46,11 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Vartotojai.cs">
+    <Compile Include="Admin\Asmenys\Asmenys.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vartotojai.Designer.cs">
+    <Compile Include="Admin\Asmenys\Asmenys.Designer.cs">
+      <DependentUpon>Asmenys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\AsmenysSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\AsmenysSelection.Designer.cs">
+      <DependentUpon>AsmenysSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\VartTipaiSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\VartTipaiSelection.Designer.cs">
+      <DependentUpon>VartTipaiSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\VartotojaiCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\VartotojaiCreate.Designer.cs">
+      <DependentUpon>VartotojaiCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\Vartotojai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\Vartotojai.Designer.cs">
       <DependentUpon>Vartotojai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Asmenys\AsmenysEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Asmenys\AsmenysEdit.Designer.cs">
+      <DependentUpon>AsmenysEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Asmenys\AsmenysCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Asmenys\AsmenysCreate.Designer.cs">
+      <DependentUpon>AsmenysCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\DestytojaiSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\DestytojaiSelection.Designer.cs">
+      <DependentUpon>DestytojaiSelection.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_screen.cs">
       <SubType>Form</SubType>
@@ -58,23 +100,80 @@
     <Compile Include="Login_screen.Designer.cs">
       <DependentUpon>Login_screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_MainMenu.cs">
+    <Compile Include="Admin\Admin_MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_MainMenu.Designer.cs">
+    <Compile Include="Admin\Admin_MainMenu.Designer.cs">
       <DependentUpon>Admin_MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\PriskirtiDestytoja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\PriskirtiDestytoja.Designer.cs">
+      <DependentUpon>PriskirtiDestytoja.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Admin\StudijuDalykai\StudijuDalykai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\StudijuDalykai.Designer.cs">
+      <DependentUpon>StudijuDalykai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\StudijuDalykaiCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\StudijuDalykaiCreate.Designer.cs">
+      <DependentUpon>StudijuDalykaiCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\StudijuDalykaiEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudijuDalykai\StudijuDalykaiEdit.Designer.cs">
+      <DependentUpon>StudijuDalykaiEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="t_DataHandler.cs" />
     <Compile Include="t_StoredProc.cs" />
-    <EmbeddedResource Include="Vartotojai.resx">
+    <Compile Include="Admin\Vartotojai\VartotojaiEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Vartotojai\VartotojaiEdit.Designer.cs">
+      <DependentUpon>VartotojaiEdit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Asmenys\Asmenys.resx">
+      <DependentUpon>Asmenys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Asmenys\AsmenysCreate.resx">
+      <DependentUpon>AsmenysCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Asmenys\AsmenysEdit.resx">
+      <DependentUpon>AsmenysEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudijuDalykai\DestytojaiSelection.resx">
+      <DependentUpon>DestytojaiSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudijuDalykai\PriskirtiDestytoja.resx">
+      <DependentUpon>PriskirtiDestytoja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudijuDalykai\StudijuDalykai.resx">
+      <DependentUpon>StudijuDalykai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudijuDalykai\StudijuDalykaiCreate.resx">
+      <DependentUpon>StudijuDalykaiCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Vartotojai\AsmenysSelection.resx">
+      <DependentUpon>AsmenysSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Vartotojai\VartTipaiSelection.resx">
+      <DependentUpon>VartTipaiSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Vartotojai\Vartotojai.resx">
       <DependentUpon>Vartotojai.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_screen.resx">
       <DependentUpon>Login_screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin_MainMenu.resx">
+    <EmbeddedResource Include="Admin\Admin_MainMenu.resx">
       <DependentUpon>Admin_MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -86,7 +185,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="DB.config" />
+    <EmbeddedResource Include="Admin\Vartotojai\VartotojaiCreate.resx">
+      <DependentUpon>VartotojaiCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Vartotojai\VartotojaiEdit.resx">
+      <DependentUpon>VartotojaiEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB.ini" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

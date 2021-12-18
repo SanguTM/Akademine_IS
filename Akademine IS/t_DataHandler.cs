@@ -443,13 +443,13 @@ namespace Akademine_IS
     SqlConnection m_Connection = null;
 #endif
 
-    /// <summary>
-    /// Connection string - laikomas objekte
-    /// privatus kintamasis, kad kreiptis naudokite "ConnectionString"
-    /// <see cref="t_DataHandler.ConnectionString"/>
-    /// </summary>
-    string m_ConnString = "Data Source=SRV-TESTAVIMUI;Initial Catalog=SK_ALX_Nuoma_Aktima;"//#
-        + " User Id=sa; Password=0109;";//#
+        /// <summary>
+        /// Connection string - laikomas objekte
+        /// privatus kintamasis, kad kreiptis naudokite "ConnectionString"
+        /// <see cref="t_DataHandler.ConnectionString"/>
+        /// </summary>
+        string m_ConnString = ""; /*"Data Source=SRV-TESTAVIMUI;Initial Catalog=SK_ALX_Nuoma_Aktima;"//#
+        + " User Id=sa; Password=0109;";*///#
     /// <summary>
     /// Graþina Connection string'à. Default connection string:
     /// Data Source=SRV-TESTAVIMUI;Initial Catalog=SK_ALX_Nuoma_Aktima; User Id=sa; Password=0109;
@@ -517,23 +517,38 @@ namespace Akademine_IS
       m_Connection.StateChange += new StateChangeEventHandler(DoSettings);
       m_Connection.Open();
 #endif
+            if (m_ConnString.Trim().Equals(""))
+            {
+                
+            }
     }
 
-    /// <summary>
-    /// Klases konstruktorius. 
-    /// Atidaromas einamasis objekto connection'as pagal perduodama ConnString kintamaji.
-    /// Pvz.: "Data Source=SrvVardas;Initial Catalog=DbVardas;User Id=Vartotojas; Password=slaptazodis;"
-    /// </summary>
-    /// <param name="ConnString">pinlas connection string'as</param>
-    public t_DataHandler(string ConnString)
+        /// <summary>
+        /// Klases konstruktorius. 
+        /// Atidaromas einamasis objekto connection'as pagal perduodama ConnString kintamaji.
+        /// Pvz.: "Data Source=SrvVardas;Initial Catalog=DbVardas;User Id=Vartotojas; Password=slaptazodis;"
+        /// </summary>
+        /// <param name="ConnString">pinlas connection string'as</param>
+        public t_DataHandler(string ConnString, int paramType = 0)
     {
-      m_ConnString = ConnString;
+            if (paramType == 0)
+            {
+                m_ConnString = ConnString;
+            }
+            else
+            {
+                if (!ConnString.Trim().Equals("") && m_ConnString.Trim().Equals(""))
+                {
+                    string[] ini = File.ReadAllLines(ConnString);
+                    m_ConnString = ini[0];
+                }
+            }
 #if (OLD_CONNECTION)
       m_Connection = new SqlConnection(m_ConnString);
       m_Connection.StateChange += new StateChangeEventHandler(DoSettings);
       m_Connection.Open();
 #endif
-    }
+        }
 
     /// <summary>
     /// Klases konstruktorius. 

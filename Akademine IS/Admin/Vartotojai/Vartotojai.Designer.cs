@@ -31,20 +31,24 @@ namespace Akademine_IS
         {
             this.VartotojaiGridView = new System.Windows.Forms.DataGridView();
             this.CloseForm = new System.Windows.Forms.Button();
+            this.Naujas = new System.Windows.Forms.Button();
+            this.Redaguoti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.VartotojaiGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // VartotojaiGridView
             // 
+            this.VartotojaiGridView.AllowUserToAddRows = false;
             this.VartotojaiGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.VartotojaiGridView.Location = new System.Drawing.Point(34, 68);
+            this.VartotojaiGridView.Location = new System.Drawing.Point(41, 65);
             this.VartotojaiGridView.Name = "VartotojaiGridView";
             this.VartotojaiGridView.Size = new System.Drawing.Size(712, 321);
             this.VartotojaiGridView.TabIndex = 1;
+            this.VartotojaiGridView.DoubleClick += new System.EventHandler(this.VartotojaiGridView_DoubleClick);
             // 
             // CloseForm
             // 
-            this.CloseForm.Location = new System.Drawing.Point(336, 406);
+            this.CloseForm.Location = new System.Drawing.Point(343, 403);
             this.CloseForm.Name = "CloseForm";
             this.CloseForm.Size = new System.Drawing.Size(75, 23);
             this.CloseForm.TabIndex = 2;
@@ -52,11 +56,33 @@ namespace Akademine_IS
             this.CloseForm.UseVisualStyleBackColor = true;
             this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             // 
+            // Naujas
+            // 
+            this.Naujas.Location = new System.Drawing.Point(41, 20);
+            this.Naujas.Name = "Naujas";
+            this.Naujas.Size = new System.Drawing.Size(75, 23);
+            this.Naujas.TabIndex = 3;
+            this.Naujas.Text = "Naujas";
+            this.Naujas.UseVisualStyleBackColor = true;
+            this.Naujas.Click += new System.EventHandler(this.Naujas_Click);
+            // 
+            // Redaguoti
+            // 
+            this.Redaguoti.Location = new System.Drawing.Point(168, 20);
+            this.Redaguoti.Name = "Redaguoti";
+            this.Redaguoti.Size = new System.Drawing.Size(75, 23);
+            this.Redaguoti.TabIndex = 4;
+            this.Redaguoti.Text = "Redaguoti";
+            this.Redaguoti.UseVisualStyleBackColor = true;
+            this.Redaguoti.Click += new System.EventHandler(this.Redaguoti_Click);
+            // 
             // Vartotojai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Redaguoti);
+            this.Controls.Add(this.Naujas);
             this.Controls.Add(this.CloseForm);
             this.Controls.Add(this.VartotojaiGridView);
             this.Name = "Vartotojai";
@@ -69,5 +95,7 @@ namespace Akademine_IS
         #endregion
         private System.Windows.Forms.DataGridView VartotojaiGridView;
         private System.Windows.Forms.Button CloseForm;
+        private System.Windows.Forms.Button Naujas;
+        private System.Windows.Forms.Button Redaguoti;
     }
 }

@@ -63,6 +63,7 @@ namespace Akademine_IS
             this.StudijuDalykai.TabIndex = 2;
             this.StudijuDalykai.Text = "Studiju dalykai";
             this.StudijuDalykai.UseVisualStyleBackColor = true;
+            this.StudijuDalykai.Click += new System.EventHandler(this.StudijuDalykai_Click);
             // 
             // StudentuGrupes
             // 
@@ -70,7 +71,7 @@ namespace Akademine_IS
             this.StudentuGrupes.Name = "StudentuGrupes";
             this.StudentuGrupes.Size = new System.Drawing.Size(237, 74);
             this.StudentuGrupes.TabIndex = 3;
-            this.StudentuGrupes.Text = "Studentu Grupes";
+            this.StudentuGrupes.Text = "Studentu grupes";
             this.StudentuGrupes.UseVisualStyleBackColor = true;
             // 
             // Asmenys
@@ -81,6 +82,7 @@ namespace Akademine_IS
             this.Asmenys.TabIndex = 4;
             this.Asmenys.Text = "Asmenys";
             this.Asmenys.UseVisualStyleBackColor = true;
+            this.Asmenys.Click += new System.EventHandler(this.Asmenys_Click);
             // 
             // Admin_MainMenu
             // 
