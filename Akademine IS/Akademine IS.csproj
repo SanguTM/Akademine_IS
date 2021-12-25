@@ -94,6 +94,24 @@
     <Compile Include="Admin\StudijuDalykai\DestytojaiSelection.Designer.cs">
       <DependentUpon>DestytojaiSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentuGrupes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentuGrupes.Designer.cs">
+      <DependentUpon>StudentuGrupes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\DalykaiSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\DalykaiSelection.Designer.cs">
+      <DependentUpon>DalykaiSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojai\Destytojai_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojai\Destytojai_Menu.Designer.cs">
+      <DependentUpon>Destytojai_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login_screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +129,60 @@
     </Compile>
     <Compile Include="Admin\StudijuDalykai\PriskirtiDestytoja.Designer.cs">
       <DependentUpon>PriskirtiDestytoja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\PriskirtiStudenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\PriskirtiStudenta.Designer.cs">
+      <DependentUpon>PriskirtiStudenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\PriskirtiStudentuGrupesDalykus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\PriskirtiStudentuGrupesDalykus.Designer.cs">
+      <DependentUpon>PriskirtiStudentuGrupesDalykus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojai\NewVertinimai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojai\NewVertinimai.Designer.cs">
+      <DependentUpon>NewVertinimai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nustatymai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nustatymai.Designer.cs">
+      <DependentUpon>Nustatymai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojai\PasirinktiDalyka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojai\PasirinktiDalyka.Designer.cs">
+      <DependentUpon>PasirinktiDalyka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojai\PasirinktiStudentuGrupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojai\PasirinktiStudentuGrupe.Designer.cs">
+      <DependentUpon>PasirinktiStudentuGrupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojai\PasirinktiStudenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojai\PasirinktiStudenta.Designer.cs">
+      <DependentUpon>PasirinktiStudenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studentai\PerziuretiPazymi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentai\PerziuretiPazymi.Designer.cs">
+      <DependentUpon>PerziuretiPazymi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studentai\PasirinktiStudentoDalyka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentai\PasirinktiStudentoDalyka.Designer.cs">
+      <DependentUpon>PasirinktiStudentoDalyka.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -132,6 +204,36 @@
     <Compile Include="Admin\StudijuDalykai\StudijuDalykaiEdit.Designer.cs">
       <DependentUpon>StudijuDalykaiEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentuGrupesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentuGrupesEdit.Designer.cs">
+      <DependentUpon>StudentuGrupesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentaiSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentaiSelection.Designer.cs">
+      <DependentUpon>StudentaiSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentuGrupesCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\StudentuGrupes\StudentuGrupesCreate.Designer.cs">
+      <DependentUpon>StudentuGrupesCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Destytojai\StudentoPazymiai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Destytojai\StudentoPazymiai.Designer.cs">
+      <DependentUpon>StudentoPazymiai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Studentai\StudentoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentai\StudentoMenu.Designer.cs">
+      <DependentUpon>StudentoMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="t_DataHandler.cs" />
     <Compile Include="t_StoredProc.cs" />
     <Compile Include="Admin\Vartotojai\VartotojaiEdit.cs">
@@ -149,6 +251,18 @@
     <EmbeddedResource Include="Admin\Asmenys\AsmenysEdit.resx">
       <DependentUpon>AsmenysEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudentuGrupes\DalykaiSelection.resx">
+      <DependentUpon>DalykaiSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudentuGrupes\PriskirtiStudenta.resx">
+      <DependentUpon>PriskirtiStudenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudentuGrupes\PriskirtiStudentuGrupesDalykus.resx">
+      <DependentUpon>PriskirtiStudentuGrupesDalykus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudentuGrupes\StudentuGrupesEdit.resx">
+      <DependentUpon>StudentuGrupesEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\StudijuDalykai\DestytojaiSelection.resx">
       <DependentUpon>DestytojaiSelection.cs</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +275,9 @@
     <EmbeddedResource Include="Admin\StudijuDalykai\StudijuDalykaiCreate.resx">
       <DependentUpon>StudijuDalykaiCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudijuDalykai\StudijuDalykaiEdit.resx">
+      <DependentUpon>StudijuDalykaiEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\Vartotojai\AsmenysSelection.resx">
       <DependentUpon>AsmenysSelection.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,11 +287,32 @@
     <EmbeddedResource Include="Admin\Vartotojai\Vartotojai.resx">
       <DependentUpon>Vartotojai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Destytojai\Destytojai_Menu.resx">
+      <DependentUpon>Destytojai_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojai\NewVertinimai.resx">
+      <DependentUpon>NewVertinimai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojai\PasirinktiDalyka.resx">
+      <DependentUpon>PasirinktiDalyka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojai\StudentoPazymiai.resx">
+      <DependentUpon>StudentoPazymiai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login_screen.resx">
       <DependentUpon>Login_screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\Admin_MainMenu.resx">
       <DependentUpon>Admin_MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nustatymai.resx">
+      <DependentUpon>Nustatymai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojai\PasirinktiStudentuGrupe.resx">
+      <DependentUpon>PasirinktiStudentuGrupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Destytojai\PasirinktiStudenta.resx">
+      <DependentUpon>PasirinktiStudenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -191,7 +329,27 @@
     <EmbeddedResource Include="Admin\Vartotojai\VartotojaiEdit.resx">
       <DependentUpon>VartotojaiEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DB.ini" />
+    <EmbeddedResource Include="Admin\StudentuGrupes\StudentuGrupes.resx">
+      <DependentUpon>StudentuGrupes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudentuGrupes\StudentaiSelection.resx">
+      <DependentUpon>StudentaiSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\StudentuGrupes\StudentuGrupesCreate.resx">
+      <DependentUpon>StudentuGrupesCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentai\PasirinktiStudentoDalyka.resx">
+      <DependentUpon>PasirinktiStudentoDalyka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentai\PerziuretiPazymi.resx">
+      <DependentUpon>PerziuretiPazymi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentai\StudentoMenu.resx">
+      <DependentUpon>StudentoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -205,5 +363,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

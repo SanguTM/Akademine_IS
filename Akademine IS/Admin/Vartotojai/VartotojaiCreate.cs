@@ -59,7 +59,7 @@ namespace Akademine_IS
 
         private void Uzdaryti_Click(object sender, EventArgs e)
         {
-            Close();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void AsmenysSelection_Click(object sender, EventArgs e)

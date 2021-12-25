@@ -26,7 +26,7 @@ namespace Akademine_IS
             DataTable table_uspv_Asmenys = uspv_Asmenys.Open();
 
             InitializeComponent();
-            AsmenysGridView.DataSource = table_uspv_Asmenys;
+            AsmenysGridView.DataSource = GetAsmenys();
 
             int i = 0;
             while (i < AsmenysGridView.Columns.Count)
@@ -55,6 +55,12 @@ namespace Akademine_IS
 
         }
 
+        private DataTable GetAsmenys()
+        {
+            t_StoredProc uspv_Asmenys = new t_StoredProc(dh, "uspv_Asmenys");
+            return uspv_Asmenys.Open();
+        }
+
         private void CloseForm_Click(object sender, EventArgs e)
         {
             Close();
@@ -69,7 +75,10 @@ namespace Akademine_IS
                 {
                     int Id = Convert.ToInt32(drv.Row["AsmuoId"]);
                     AsmenysEdit ae = new AsmenysEdit(dh, Id, user, usertype);
-                    ae.ShowDialog();
+                    if (ae.ShowDialog() == DialogResult.OK)
+                    {
+                        AsmenysGridView.DataSource = GetAsmenys();
+                    };
                 }
             }
         }
@@ -84,8 +93,11 @@ namespace Akademine_IS
                     if (drv.Row["AsmuoId"] != null)
                     {
                         int Id = Convert.ToInt32(drv.Row["AsmuoId"]);
-                        AsmenysEdit ve = new AsmenysEdit(dh, Id, user, usertype);
-                        ve.ShowDialog();
+                        AsmenysEdit ae = new AsmenysEdit(dh, Id, user, usertype);
+                        if (ae.ShowDialog() == DialogResult.OK)
+                        {
+                            AsmenysGridView.DataSource = GetAsmenys();
+                        }; ;
                     }
                 }
             }
@@ -94,7 +106,10 @@ namespace Akademine_IS
         private void Naujas_Click(object sender, EventArgs e)
         {
             AsmenysCreate ae = new AsmenysCreate(dh);
-            ae.ShowDialog();
+            if (ae.ShowDialog() == DialogResult.OK)
+            {
+                AsmenysGridView.DataSource = GetAsmenys();
+            }; ;
         }
 
         private void Istrinti_Click(object sender, EventArgs e)

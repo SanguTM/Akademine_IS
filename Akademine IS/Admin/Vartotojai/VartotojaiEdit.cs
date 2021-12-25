@@ -57,7 +57,7 @@ namespace Akademine_IS
             uspu_Vartotojai.ParamByName("@piArAktyvus").Value = checkBox_ArAktyvus.Checked;
 
             uspu_Vartotojai.Execute();
-            Close();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void Uzdaryti_Click(object sender, EventArgs e)

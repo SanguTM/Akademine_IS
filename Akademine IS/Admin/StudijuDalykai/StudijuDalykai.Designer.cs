@@ -34,6 +34,7 @@ namespace Akademine_IS
             this.CloseForm = new System.Windows.Forms.Button();
             this.StudijuDalykaiGridView = new System.Windows.Forms.DataGridView();
             this.PriskirtiDestytojus = new System.Windows.Forms.Button();
+            this.Istrinti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudijuDalykaiGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,11 +88,22 @@ namespace Akademine_IS
             this.PriskirtiDestytojus.UseVisualStyleBackColor = true;
             this.PriskirtiDestytojus.Click += new System.EventHandler(this.PriskirtiDestytojus_Click);
             // 
+            // Istrinti
+            // 
+            this.Istrinti.Location = new System.Drawing.Point(304, 22);
+            this.Istrinti.Name = "Istrinti";
+            this.Istrinti.Size = new System.Drawing.Size(75, 23);
+            this.Istrinti.TabIndex = 10;
+            this.Istrinti.Text = "Ištrinti";
+            this.Istrinti.UseVisualStyleBackColor = true;
+            this.Istrinti.Click += new System.EventHandler(this.Istrinti_Click);
+            // 
             // StudijuDalykai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Istrinti);
             this.Controls.Add(this.PriskirtiDestytojus);
             this.Controls.Add(this.Redaguoti);
             this.Controls.Add(this.Naujas);
@@ -111,5 +123,6 @@ namespace Akademine_IS
         private System.Windows.Forms.Button CloseForm;
         private System.Windows.Forms.DataGridView StudijuDalykaiGridView;
         private System.Windows.Forms.Button PriskirtiDestytojus;
+        private System.Windows.Forms.Button Istrinti;
     }
 }

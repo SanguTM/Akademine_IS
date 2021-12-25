@@ -73,6 +73,7 @@ namespace Akademine_IS
             this.StudentuGrupes.TabIndex = 3;
             this.StudentuGrupes.Text = "Studentu grupes";
             this.StudentuGrupes.UseVisualStyleBackColor = true;
+            this.StudentuGrupes.Click += new System.EventHandler(this.StudentuGrupes_Click);
             // 
             // Asmenys
             // 

@@ -30,7 +30,7 @@ namespace Akademine_IS
             DataTable table_uspv_Asmenys = uspv_Asmenys.Open();
 
             InitializeComponent();
-            AsmSelectionGridView.DataSource = table_uspv_Asmenys;
+            AsmSelectionGridView.DataSource = GetAsmenys();
 
             int i = 0;
             while (i < AsmSelectionGridView.Columns.Count)
@@ -52,6 +52,12 @@ namespace Akademine_IS
             AsmSelectionGridView.Columns[2].HeaderText = "Pavardė";
             AsmSelectionGridView.Columns[3].HeaderText = "Amžius";
             AsmSelectionGridView.Columns[4].HeaderText = "Asmens kodas";
+        }
+
+        private DataTable GetAsmenys()
+        {
+            t_StoredProc uspv_Asmenys = new t_StoredProc(dh, "uspv_Asmenys");
+            return uspv_Asmenys.Open();
         }
 
         private void AsmSelectionGridView_DoubleClick(object sender, EventArgs e)
@@ -81,8 +87,7 @@ namespace Akademine_IS
                         Vardas = Convert.ToString(drv.Row["Vardas"]);
                         Pavarde = Convert.ToString(drv.Row["Pavarde"]);
 
-                        DialogResult = DialogResult.OK;
-                        Close();
+                        this.DialogResult = DialogResult.OK;;
                     }
                 }
             }

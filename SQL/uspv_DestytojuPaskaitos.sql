@@ -28,8 +28,6 @@ if @piPriskirtiDestytojus = 1
 
 if @piPriskirtiDestytojus = 0
 	select 
-		Vardas = a.Vardas,
-		Pavarde = a.Pavarde,
 		StdDalykoId = sd.StdDalykoId,
 		DalykoPavad = sd.Pavadinimas,
 		DalykoKodas = sd.Kodas,

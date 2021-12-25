@@ -12,7 +12,6 @@ namespace Akademine_IS
 {
     public partial class AsmenysCreate : Form
     {
-        string poValue;
         string vtPavad = "";
         int VartotojuTipaiId = 0;
         t_DataHandler dh;
@@ -31,7 +30,7 @@ namespace Akademine_IS
             uspi_Asmenys.ParamByName("@piAsmensKodas").Value = AsmensKodasBox.Text;
 
             uspi_Asmenys.Execute();
-            Close();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void Uzdaryti_Click(object sender, EventArgs e)

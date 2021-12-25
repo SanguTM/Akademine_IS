@@ -12,7 +12,8 @@ namespace Akademine_IS
         public string poValue = "";
         public string poError = "";
         public string poUser = "";
-
+        public string poUserId = "";
+        public string poAsmuoId = "";
         public Login_screen()
         {
 
@@ -38,16 +39,22 @@ namespace Akademine_IS
             if (!usp_Login.ParamByName("@poValue").Value.ToString().Equals(""));
             {
                 poValue = usp_Login.ParamByName("@poValue").Value.ToString();
-        
             }
             if (!usp_Login.ParamByName("@poError").Value.ToString().Equals(""));
             {
                 poError = usp_Login.ParamByName("@poError").Value.ToString();
-
             }
             if (!usp_Login.ParamByName("@poUser").Value.ToString().Equals(""));
             {
                 poUser = usp_Login.ParamByName("@poUser").Value.ToString();
+            }
+            if (!usp_Login.ParamByName("@poUserId").Value.ToString().Equals("")) ;
+            {
+                poUserId = usp_Login.ParamByName("@poUserId").Value.ToString();
+            }
+            if (!usp_Login.ParamByName("@poAsmuoId").Value.ToString().Equals("")) ;
+            {
+                poAsmuoId = usp_Login.ParamByName("@poAsmuoId").Value.ToString();
 
             }
 
@@ -58,10 +65,12 @@ namespace Akademine_IS
                     mm.ShowDialog();
                     break;
                 case "4": //Destytojas
-                   ShowDialog();
+                    Destytojai_Menu dm = new Destytojai_Menu(DataHandler, poValue, poUser, Convert.ToInt32(poUserId), Convert.ToInt32(poAsmuoId));
+                    dm.ShowDialog();
                     break;
                 case "5": //Studentas
-                    ShowDialog();
+                    StudentoMenu sm = new StudentoMenu(DataHandler, poValue, poUser, Convert.ToInt32(poUserId), Convert.ToInt32(poAsmuoId));
+                    sm.ShowDialog();
                     break;
             }
         }
@@ -82,17 +91,17 @@ namespace Akademine_IS
                 usp_Login.ParamByName("@piSlaptazodis").Value = Password;
                 usp_Login.Execute();
 
-                if (!usp_Login.ParamByName("@poValue").Value.ToString().Equals("")) ;
+                if (!usp_Login.ParamByName("@poValue").Value.ToString().Equals(""));
                 {
                     poValue = usp_Login.ParamByName("@poValue").Value.ToString();
 
                 }
-                if (!usp_Login.ParamByName("@poError").Value.ToString().Equals("")) ;
+                if (!usp_Login.ParamByName("@poError").Value.ToString().Equals(""));
                 {
                     poError = usp_Login.ParamByName("@poError").Value.ToString();
 
                 }
-                if (!usp_Login.ParamByName("@poUser").Value.ToString().Equals("")) ;
+                if (!usp_Login.ParamByName("@poUser").Value.ToString().Equals(""));
                 {
                     poUser = usp_Login.ParamByName("@poUser").Value.ToString();
 

@@ -30,12 +30,23 @@ namespace Akademine_IS
             uspi_StudijuDalykai.ParamByName("@piAprasymas").Value = AprasymasBox.Text;
 
             uspi_StudijuDalykai.Execute();
-            Close();
+
+            if (!uspi_StudijuDalykai.ParamByName("@poValue").Value.ToString().Equals(""));
+            {
+                poValue = uspi_StudijuDalykai.ParamByName("@poValue").Value.ToString();
+            }
+            this.DialogResult = DialogResult.OK;
         }
 
         private void Uzdaryti_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void PriskirtiDestytoja_Click(object sender, EventArgs e)
+        {      
+            PriskirtiDestytoja pd = new PriskirtiDestytoja(dh, Convert.ToInt32(poValue));
+            pd.ShowDialog();
         }
     }
 }

@@ -39,6 +39,7 @@ namespace Akademine_IS
             this.Pavadinimas = new System.Windows.Forms.Label();
             this.Kodas = new System.Windows.Forms.Label();
             this.StdDalykoId = new System.Windows.Forms.Label();
+            this.PriskirtiDestytoja = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Uzdaryti
@@ -126,11 +127,22 @@ namespace Akademine_IS
             this.StdDalykoId.TabIndex = 46;
             this.StdDalykoId.Text = "Studiju dalyko Id";
             // 
+            // PriskirtiDestytoja
+            // 
+            this.PriskirtiDestytoja.Location = new System.Drawing.Point(453, 218);
+            this.PriskirtiDestytoja.Name = "PriskirtiDestytoja";
+            this.PriskirtiDestytoja.Size = new System.Drawing.Size(100, 23);
+            this.PriskirtiDestytoja.TabIndex = 58;
+            this.PriskirtiDestytoja.Text = "Priskirti dėstytoją";
+            this.PriskirtiDestytoja.UseVisualStyleBackColor = true;
+            this.PriskirtiDestytoja.Click += new System.EventHandler(this.PriskirtiDestytoja_Click);
+            // 
             // StudijuDalykaiCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PriskirtiDestytoja);
             this.Controls.Add(this.Uzdaryti);
             this.Controls.Add(this.Isaugoti);
             this.Controls.Add(this.AprasymasBox);
@@ -160,5 +172,6 @@ namespace Akademine_IS
         private System.Windows.Forms.Label Pavadinimas;
         private System.Windows.Forms.Label Kodas;
         private System.Windows.Forms.Label StdDalykoId;
+        private System.Windows.Forms.Button PriskirtiDestytoja;
     }
 }

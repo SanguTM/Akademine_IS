@@ -44,5 +44,10 @@ namespace Akademine_IS
             StudijuDalykai sd = new StudijuDalykai(dh, usertype, CurrentUser.Text);
             sd.ShowDialog();
         }
+
+        private void StudentuGrupes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

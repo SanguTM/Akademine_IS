@@ -22,7 +22,7 @@ namespace Akademine_IS
             DataTable table_uspv_StudijuDalykai = uspv_StudijuDalykai.Open();
 
             InitializeComponent();
-            StudijuDalykaiGridView.DataSource = table_uspv_StudijuDalykai;
+            StudijuDalykaiGridView.DataSource = GetStudijuDalykai();
 
             int i = 0;
             while (i < StudijuDalykaiGridView.Columns.Count)
@@ -48,10 +48,19 @@ namespace Akademine_IS
             user = User;
         }
 
+        private DataTable GetStudijuDalykai()
+        {
+            t_StoredProc uspv_StudijuDalykai = new t_StoredProc(dh, "uspv_StudijuDalykai");
+            return uspv_StudijuDalykai.Open();
+        }
+
         private void Naujas_Click(object sender, EventArgs e)
         {
             StudijuDalykaiCreate sdc = new StudijuDalykaiCreate(dh);
-            sdc.ShowDialog();
+            if (sdc.ShowDialog() == DialogResult.OK)
+            {
+                StudijuDalykaiGridView.DataSource = GetStudijuDalykai();
+            };
         }
 
         private void Redaguoti_Click(object sender, EventArgs e)
@@ -61,9 +70,12 @@ namespace Akademine_IS
             {
                 if (drv.Row["StdDalykoId"] != null)
                 {
-                    int vartId = Convert.ToInt32(drv.Row["StdDalykoId"]);
-                    VartotojaiEdit ve = new VartotojaiEdit(dh, vartId, user, usertype);
-                    ve.ShowDialog();
+                    int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
+                    StudijuDalykaiEdit ve = new StudijuDalykaiEdit(dh, Id, user, usertype);
+                    if (ve.ShowDialog() == DialogResult.OK)
+                    {
+                        StudijuDalykaiGridView.DataSource = GetStudijuDalykai();
+                    };
                 }
             }
         }
@@ -80,9 +92,12 @@ namespace Akademine_IS
             {
                 if (drv.Row["StdDalykoId"] != null)
                 {
-                    int vartId = Convert.ToInt32(drv.Row["StdDalykoId"]);
-                    VartotojaiEdit ve = new VartotojaiEdit(dh, vartId, user, usertype);
-                    ve.ShowDialog();
+                    int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
+                    StudijuDalykaiEdit ve = new StudijuDalykaiEdit(dh, Id, user, usertype);
+                    if (ve.ShowDialog() == DialogResult.OK)
+                    {
+                        StudijuDalykaiGridView.DataSource = GetStudijuDalykai();
+                    };
                 }
             }
         }
@@ -96,7 +111,28 @@ namespace Akademine_IS
                 {
                     int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
                     PriskirtiDestytoja pd = new PriskirtiDestytoja(dh, Id);
-                    pd.ShowDialog();
+                    if (pd.ShowDialog() == DialogResult.OK)
+                    {
+                        StudijuDalykaiGridView.DataSource = GetStudijuDalykai();
+                    };
+                }
+            }
+        }
+
+        private void Istrinti_Click(object sender, EventArgs e)
+        {
+            if (StudijuDalykaiGridView.SelectedCells.Count > 0)
+            {
+                DataRowView drv = ((DataTable)StudijuDalykaiGridView.DataSource).DefaultView[StudijuDalykaiGridView.SelectedCells[0].RowIndex];
+                if (drv != null)
+                {
+                    if (drv.Row["StdDalykoId"] != null)
+                    {
+                        int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
+                        t_StoredProc uspd_StudijuDalykai = new t_StoredProc(dh, "uspd_StudijuDalykai");
+                        uspd_StudijuDalykai.ParamByName("@piStdDalykoId").Value = Id;
+                        uspd_StudijuDalykai.Execute();
+                    }
                 }
             }
         }

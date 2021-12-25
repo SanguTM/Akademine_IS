@@ -26,7 +26,7 @@ namespace Akademine_IS
             DataTable table_uspv_Vartotojai = uspv_Vartotojai.Open();
 
             InitializeComponent();
-            VartotojaiGridView.DataSource = table_uspv_Vartotojai;
+            VartotojaiGridView.DataSource = GetVartotojai();
 
             int i = 0;
             while (i < VartotojaiGridView.Columns.Count)
@@ -58,6 +58,12 @@ namespace Akademine_IS
 
         }
 
+        private DataTable GetVartotojai()
+        {
+            t_StoredProc uspv_Vartotojai = new t_StoredProc(dh, "uspv_Vartotojai");
+            return uspv_Vartotojai.Open();
+        }
+
         private void CloseForm_Click(object sender, EventArgs e)
         {
             Close();
@@ -72,7 +78,10 @@ namespace Akademine_IS
                 {
                     int vartId = Convert.ToInt32(drv.Row["VartotojaiId"]);
                     VartotojaiEdit ve = new VartotojaiEdit(dh, vartId, user, usertype);
-                    ve.ShowDialog();
+                    if (ve.ShowDialog() == DialogResult.OK)
+                    {
+                        VartotojaiGridView.DataSource = GetVartotojai();
+                    };
                 }
             }
         }
@@ -102,7 +111,10 @@ namespace Akademine_IS
                     {
                         int vartId = Convert.ToInt32(drv.Row["VartotojaiId"]);
                         VartotojaiEdit ve = new VartotojaiEdit(dh, vartId, user, usertype);
-                        ve.ShowDialog();
+                        if (ve.ShowDialog() == DialogResult.OK)
+                        {
+                            VartotojaiGridView.DataSource = GetVartotojai();
+                        };
                     }
                     
                 }
@@ -113,7 +125,10 @@ namespace Akademine_IS
         private void Naujas_Click(object sender, EventArgs e)
         {
             VartotojaiCreate ve = new VartotojaiCreate(dh);
-            ve.ShowDialog();
+            if (ve.ShowDialog() == DialogResult.OK)
+            {
+                VartotojaiGridView.DataSource = GetVartotojai();
+            };
         }
     }
 }

@@ -9,8 +9,7 @@ create procedure uspi_StudijuDalykai
 	@piAprasymas nvarchar(max) = null
 as
 
-declare @vError nvarchar(max), @vVartotojuTipaiId int, @vCurrKodas nvarchar(50), @vCurrPavadinimas nvarchar(255), @vCurrVartotojuTipaiId int, 
-	@vCurrAsmuoId int, @vCurrSlaptazodis nvarchar(255), @vCurrArAktyvus tinyint
+declare @vError nvarchar(max), @vVartotojuTipaiId int, @vNewRecId int
 	
 
 select @poValue = -1
@@ -28,7 +27,9 @@ begin
     @piAprasymas)
 end
 	
-select @poValue = 0
+select @vNewRecId = scope_identity()
+
+select @poValue = @vNewRecId
 
 return
 

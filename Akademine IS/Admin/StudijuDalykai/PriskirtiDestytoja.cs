@@ -30,7 +30,7 @@ namespace Akademine_IS
             DataTable table_uspv_DestytojuPaskaitos = uspv_DestytojuPaskaitos.Open();
 
             InitializeComponent();
-            DestytojuPaskaitosGridView.DataSource = table_uspv_DestytojuPaskaitos;
+            DestytojuPaskaitosGridView.DataSource = GetDestytojai(StdDalykoId);
 
             int i = 0;
             while (i < DestytojuPaskaitosGridView.Columns.Count)
@@ -50,6 +50,13 @@ namespace Akademine_IS
             DestytojuPaskaitosGridView.Columns[0].HeaderText = "Dėstytojo vardas";
             DestytojuPaskaitosGridView.Columns[1].HeaderText = "Dėstytojo Pavardė";
         }
+        private DataTable GetDestytojai(int StdDalykoId)
+        {
+            t_StoredProc uspv_DestytojuPaskaitos = new t_StoredProc(dh, "uspv_DestytojuPaskaitos");
+            uspv_DestytojuPaskaitos.ParamByName("@piPriskirtiDestytojus").Value = 1;
+            uspv_DestytojuPaskaitos.ParamByName("@piStdDalykoId").Value = StdDalykoId;
+            return uspv_DestytojuPaskaitos.Open();
+        }
 
         private void Naujas_Click(object sender, EventArgs e)
         {
@@ -65,10 +72,8 @@ namespace Akademine_IS
                 uspi_DestytojuPaskaitos.ParamByName("@piDestytojaiId").Value = AsmuoId;
 
                 uspi_DestytojuPaskaitos.Execute();
-
             }
         }
-
         private void Istrinti_Click(object sender, EventArgs e)
         {
             if (DestytojuPaskaitosGridView.SelectedCells.Count > 0)
@@ -95,6 +100,11 @@ namespace Akademine_IS
         }
 
         private void DestytojuPaskaitosGridView_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Redaguoti_Click(object sender, EventArgs e)
         {
 
         }

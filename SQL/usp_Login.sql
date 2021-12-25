@@ -7,10 +7,12 @@ create procedure usp_Login
   @piKodas nvarchar(50) = null,
   @piSlaptazodis nvarchar(255) = null,
   @poError nvarchar(max) = null output,
-	@poUser nvarchar(max) = null output
+	@poUser nvarchar(max) = null output,
+	@poUserId int = null output,
+	@poAsmuoId int = null output
 as
 
-declare @vError nvarchar(max), @vAktyvus int, @vVartotojuTipaiId int, @vVartotojaiId int, @vPavadinimas nvarchar(255)
+declare @vError nvarchar(max), @vAktyvus int, @vVartotojuTipaiId int, @vVartotojaiId int, @vPavadinimas nvarchar(255), @vAsmuoId int
 
 select @poValue = -1
 
@@ -24,12 +26,18 @@ where Kodas = @piKodas and Slaptazodis = @piSlaptazodis
 select @vAktyvus = Aktyvus, @vVartotojuTipaiId = VartotojuTipaiId
 from Vartotojai
 where VartotojaiId = @vVartotojaiId
+
+select @vAsmuoId = AsmuoId
+from Vartotojai
+where VartotojaiId = @vVartotojaiId
  
 if @vAktyvus = 0
 	goto ERROR_Neaktyvus
 	
 select @poValue = @vVartotojuTipaiId
 select @poUser = @vPavadinimas
+select @poUserId = @vVartotojaiId
+select @poAsmuoId = isnull(@vVartotojaiId, 0)
 
 return
 	

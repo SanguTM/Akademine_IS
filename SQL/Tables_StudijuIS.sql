@@ -81,6 +81,27 @@ Pavadinimas nvarchar(255) not null default '',
 Aprasymas nvarchar(max) null)
 GO
 
+if not EXISTS(SELECT 1 FROM sysobjects WHERE sysobjects.name = 'StudentuGrupes')
+create table StudentuGrupes (
+StudentuGrupesId int identity,
+Kodas nvarchar(50) not null default '',
+Pavadinimas nvarchar(255) not null default '')
+GO
+
+if not EXISTS(SELECT 1 FROM sysobjects WHERE sysobjects.name = 'StudentuGrupesStudentai')
+create table StudentuGrupesStudentai (
+StudentoId int not null,
+StudentuGrupesId int not null)
+GO
+
+if not EXISTS(SELECT 1 FROM sysobjects WHERE sysobjects.name = 'StudentuGrupesDalykai')
+create table StudentuGrupesDalykai (
+StdDalykoId int not null,
+StudentuGrupesId int not null
+)
+GO
+
+
 if not EXISTS(SELECT 1 FROM sysobjects WHERE sysobjects.name = 'DestytojuPaskaitos')
 create table DestytojuPaskaitos (
 StdDalykoId int not null,
@@ -101,7 +122,8 @@ StdDalykoId int not null,
 Vertinimas int null,
 StudentaiId int not null,
 DestytojaiId int null,
-Data datetime not null default getdate())
+Data datetime not null default getdate(),
+Pastaba nvarchar(max))
 GO
 
 

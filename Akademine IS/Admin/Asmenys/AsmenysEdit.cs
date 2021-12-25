@@ -41,7 +41,7 @@ namespace Akademine_IS
             uspu_Asmenys.ParamByName("@piAsmensKodas").Value = AsmensKodasBox.Text;
 
             uspu_Asmenys.Execute();
-            Close();
+            this.DialogResult = DialogResult.OK;
         }
 
         private void Uzdaryti_Click(object sender, EventArgs e)

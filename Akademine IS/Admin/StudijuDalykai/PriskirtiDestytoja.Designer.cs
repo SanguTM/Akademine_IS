@@ -33,12 +33,13 @@ namespace Akademine_IS
             this.Naujas = new System.Windows.Forms.Button();
             this.CloseForm = new System.Windows.Forms.Button();
             this.DestytojuPaskaitosGridView = new System.Windows.Forms.DataGridView();
+            this.Redaguoti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DestytojuPaskaitosGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Istrinti
             // 
-            this.Istrinti.Location = new System.Drawing.Point(167, 22);
+            this.Istrinti.Location = new System.Drawing.Point(299, 22);
             this.Istrinti.Name = "Istrinti";
             this.Istrinti.Size = new System.Drawing.Size(75, 23);
             this.Istrinti.TabIndex = 14;
@@ -76,11 +77,22 @@ namespace Akademine_IS
             this.DestytojuPaskaitosGridView.TabIndex = 10;
             this.DestytojuPaskaitosGridView.DoubleClick += new System.EventHandler(this.DestytojuPaskaitosGridView_DoubleClick);
             // 
+            // Redaguoti
+            // 
+            this.Redaguoti.Location = new System.Drawing.Point(170, 22);
+            this.Redaguoti.Name = "Redaguoti";
+            this.Redaguoti.Size = new System.Drawing.Size(75, 23);
+            this.Redaguoti.TabIndex = 15;
+            this.Redaguoti.Text = "Redaguoti";
+            this.Redaguoti.UseVisualStyleBackColor = true;
+            this.Redaguoti.Click += new System.EventHandler(this.Redaguoti_Click);
+            // 
             // PriskirtiDestytoja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Redaguoti);
             this.Controls.Add(this.Istrinti);
             this.Controls.Add(this.Naujas);
             this.Controls.Add(this.CloseForm);
@@ -98,5 +110,6 @@ namespace Akademine_IS
         private System.Windows.Forms.Button Naujas;
         private System.Windows.Forms.Button CloseForm;
         private System.Windows.Forms.DataGridView DestytojuPaskaitosGridView;
+        private System.Windows.Forms.Button Redaguoti;
     }
 }

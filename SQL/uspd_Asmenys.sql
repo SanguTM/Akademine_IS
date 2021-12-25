@@ -1,4 +1,4 @@
-if exists (select 1 from sysobjects where name = 'uspd_Asmenys ')
+if exists (select 1 from sysobjects where name = 'uspd_Asmenys')
 drop procedure uspd_Asmenys 
 go
 
