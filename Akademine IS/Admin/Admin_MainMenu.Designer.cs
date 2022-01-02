@@ -47,6 +47,7 @@ namespace Akademine_IS
             // 
             // Vartotojai
             // 
+            this.Vartotojai.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.Vartotojai.Location = new System.Drawing.Point(421, 94);
             this.Vartotojai.Name = "Vartotojai";
             this.Vartotojai.Size = new System.Drawing.Size(237, 74);
@@ -57,26 +58,29 @@ namespace Akademine_IS
             // 
             // StudijuDalykai
             // 
+            this.StudijuDalykai.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.StudijuDalykai.Location = new System.Drawing.Point(121, 212);
             this.StudijuDalykai.Name = "StudijuDalykai";
             this.StudijuDalykai.Size = new System.Drawing.Size(237, 74);
             this.StudijuDalykai.TabIndex = 2;
-            this.StudijuDalykai.Text = "Studiju dalykai";
+            this.StudijuDalykai.Text = "Studijų dalykai";
             this.StudijuDalykai.UseVisualStyleBackColor = true;
             this.StudijuDalykai.Click += new System.EventHandler(this.StudijuDalykai_Click);
             // 
             // StudentuGrupes
             // 
+            this.StudentuGrupes.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.StudentuGrupes.Location = new System.Drawing.Point(421, 212);
             this.StudentuGrupes.Name = "StudentuGrupes";
             this.StudentuGrupes.Size = new System.Drawing.Size(237, 74);
             this.StudentuGrupes.TabIndex = 3;
-            this.StudentuGrupes.Text = "Studentu grupes";
+            this.StudentuGrupes.Text = "Studentų grupes";
             this.StudentuGrupes.UseVisualStyleBackColor = true;
             this.StudentuGrupes.Click += new System.EventHandler(this.StudentuGrupes_Click);
             // 
             // Asmenys
             // 
+            this.Asmenys.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.Asmenys.Location = new System.Drawing.Point(121, 94);
             this.Asmenys.Name = "Asmenys";
             this.Asmenys.Size = new System.Drawing.Size(237, 74);

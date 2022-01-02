@@ -51,7 +51,7 @@ namespace Akademine_IS
             // 
             // Uzdaryti
             // 
-            this.Uzdaryti.Location = new System.Drawing.Point(358, 339);
+            this.Uzdaryti.Location = new System.Drawing.Point(444, 338);
             this.Uzdaryti.Name = "Uzdaryti";
             this.Uzdaryti.Size = new System.Drawing.Size(75, 23);
             this.Uzdaryti.TabIndex = 31;
@@ -61,7 +61,7 @@ namespace Akademine_IS
             // 
             // Isaugoti
             // 
-            this.Isaugoti.Location = new System.Drawing.Point(155, 339);
+            this.Isaugoti.Location = new System.Drawing.Point(226, 338);
             this.Isaugoti.Name = "Isaugoti";
             this.Isaugoti.Size = new System.Drawing.Size(75, 23);
             this.Isaugoti.TabIndex = 30;
@@ -71,42 +71,42 @@ namespace Akademine_IS
             // 
             // SlaptazodisBox
             // 
-            this.SlaptazodisBox.Location = new System.Drawing.Point(333, 239);
+            this.SlaptazodisBox.Location = new System.Drawing.Point(419, 238);
             this.SlaptazodisBox.Name = "SlaptazodisBox";
             this.SlaptazodisBox.Size = new System.Drawing.Size(100, 20);
             this.SlaptazodisBox.TabIndex = 28;
             // 
             // AsmuoBox
             // 
-            this.AsmuoBox.Location = new System.Drawing.Point(333, 201);
+            this.AsmuoBox.Location = new System.Drawing.Point(419, 200);
             this.AsmuoBox.Name = "AsmuoBox";
             this.AsmuoBox.Size = new System.Drawing.Size(100, 20);
             this.AsmuoBox.TabIndex = 27;
             // 
             // VartotojoTipasBox
             // 
-            this.VartotojoTipasBox.Location = new System.Drawing.Point(333, 164);
+            this.VartotojoTipasBox.Location = new System.Drawing.Point(419, 163);
             this.VartotojoTipasBox.Name = "VartotojoTipasBox";
             this.VartotojoTipasBox.Size = new System.Drawing.Size(100, 20);
             this.VartotojoTipasBox.TabIndex = 26;
             // 
             // PavadinimasBox
             // 
-            this.PavadinimasBox.Location = new System.Drawing.Point(333, 129);
+            this.PavadinimasBox.Location = new System.Drawing.Point(419, 128);
             this.PavadinimasBox.Name = "PavadinimasBox";
             this.PavadinimasBox.Size = new System.Drawing.Size(100, 20);
             this.PavadinimasBox.TabIndex = 25;
             // 
             // KodasBox
             // 
-            this.KodasBox.Location = new System.Drawing.Point(333, 95);
+            this.KodasBox.Location = new System.Drawing.Point(419, 94);
             this.KodasBox.Name = "KodasBox";
             this.KodasBox.Size = new System.Drawing.Size(100, 20);
             this.KodasBox.TabIndex = 24;
             // 
             // VartotojaiIdBox
             // 
-            this.VartotojaiIdBox.Location = new System.Drawing.Point(333, 60);
+            this.VartotojaiIdBox.Location = new System.Drawing.Point(419, 59);
             this.VartotojaiIdBox.Name = "VartotojaiIdBox";
             this.VartotojaiIdBox.ReadOnly = true;
             this.VartotojaiIdBox.Size = new System.Drawing.Size(100, 20);
@@ -115,7 +115,7 @@ namespace Akademine_IS
             // ArAktyvus
             // 
             this.ArAktyvus.AutoSize = true;
-            this.ArAktyvus.Location = new System.Drawing.Point(152, 283);
+            this.ArAktyvus.Location = new System.Drawing.Point(238, 282);
             this.ArAktyvus.Name = "ArAktyvus";
             this.ArAktyvus.Size = new System.Drawing.Size(63, 13);
             this.ArAktyvus.TabIndex = 22;
@@ -124,7 +124,7 @@ namespace Akademine_IS
             // Slaptazodis
             // 
             this.Slaptazodis.AutoSize = true;
-            this.Slaptazodis.Location = new System.Drawing.Point(154, 246);
+            this.Slaptazodis.Location = new System.Drawing.Point(240, 245);
             this.Slaptazodis.Name = "Slaptazodis";
             this.Slaptazodis.Size = new System.Drawing.Size(61, 13);
             this.Slaptazodis.TabIndex = 21;
@@ -133,7 +133,7 @@ namespace Akademine_IS
             // Asmuo
             // 
             this.Asmuo.AutoSize = true;
-            this.Asmuo.Location = new System.Drawing.Point(176, 208);
+            this.Asmuo.Location = new System.Drawing.Point(262, 207);
             this.Asmuo.Name = "Asmuo";
             this.Asmuo.Size = new System.Drawing.Size(39, 13);
             this.Asmuo.TabIndex = 20;
@@ -142,7 +142,7 @@ namespace Akademine_IS
             // VartotojoTipas
             // 
             this.VartotojoTipas.AutoSize = true;
-            this.VartotojoTipas.Location = new System.Drawing.Point(141, 171);
+            this.VartotojoTipas.Location = new System.Drawing.Point(227, 170);
             this.VartotojoTipas.Name = "VartotojoTipas";
             this.VartotojoTipas.Size = new System.Drawing.Size(74, 13);
             this.VartotojoTipas.TabIndex = 19;
@@ -151,7 +151,7 @@ namespace Akademine_IS
             // Pavadinimas
             // 
             this.Pavadinimas.AutoSize = true;
-            this.Pavadinimas.Location = new System.Drawing.Point(148, 136);
+            this.Pavadinimas.Location = new System.Drawing.Point(234, 135);
             this.Pavadinimas.Name = "Pavadinimas";
             this.Pavadinimas.Size = new System.Drawing.Size(67, 13);
             this.Pavadinimas.TabIndex = 18;
@@ -160,7 +160,7 @@ namespace Akademine_IS
             // Kodas
             // 
             this.Kodas.AutoSize = true;
-            this.Kodas.Location = new System.Drawing.Point(178, 102);
+            this.Kodas.Location = new System.Drawing.Point(264, 101);
             this.Kodas.Name = "Kodas";
             this.Kodas.Size = new System.Drawing.Size(37, 13);
             this.Kodas.TabIndex = 17;
@@ -169,7 +169,7 @@ namespace Akademine_IS
             // VartotojaiId
             // 
             this.VartotojaiId.AutoSize = true;
-            this.VartotojaiId.Location = new System.Drawing.Point(152, 63);
+            this.VartotojaiId.Location = new System.Drawing.Point(238, 66);
             this.VartotojaiId.Name = "VartotojaiId";
             this.VartotojaiId.Size = new System.Drawing.Size(63, 13);
             this.VartotojaiId.TabIndex = 16;
@@ -177,7 +177,7 @@ namespace Akademine_IS
             // 
             // AsmenysSelection
             // 
-            this.AsmenysSelection.Location = new System.Drawing.Point(458, 198);
+            this.AsmenysSelection.Location = new System.Drawing.Point(544, 202);
             this.AsmenysSelection.Name = "AsmenysSelection";
             this.AsmenysSelection.Size = new System.Drawing.Size(22, 23);
             this.AsmenysSelection.TabIndex = 32;
@@ -188,7 +188,7 @@ namespace Akademine_IS
             // checkBox_ArAktyvus
             // 
             this.checkBox_ArAktyvus.AutoSize = true;
-            this.checkBox_ArAktyvus.Location = new System.Drawing.Point(371, 282);
+            this.checkBox_ArAktyvus.Location = new System.Drawing.Point(457, 281);
             this.checkBox_ArAktyvus.Name = "checkBox_ArAktyvus";
             this.checkBox_ArAktyvus.Size = new System.Drawing.Size(15, 14);
             this.checkBox_ArAktyvus.TabIndex = 33;
@@ -196,7 +196,7 @@ namespace Akademine_IS
             // 
             // VartotojuTipaiSelection
             // 
-            this.VartotojuTipaiSelection.Location = new System.Drawing.Point(458, 166);
+            this.VartotojuTipaiSelection.Location = new System.Drawing.Point(544, 165);
             this.VartotojuTipaiSelection.Name = "VartotojuTipaiSelection";
             this.VartotojuTipaiSelection.Size = new System.Drawing.Size(22, 23);
             this.VartotojuTipaiSelection.TabIndex = 34;

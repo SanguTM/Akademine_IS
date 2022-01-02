@@ -38,24 +38,24 @@ namespace Akademine_IS
             // 
             // LogIn
             // 
-            this.LogIn.Location = new System.Drawing.Point(333, 229);
+            this.LogIn.Location = new System.Drawing.Point(358, 229);
             this.LogIn.Name = "LogIn";
             this.LogIn.Size = new System.Drawing.Size(75, 23);
             this.LogIn.TabIndex = 0;
-            this.LogIn.Text = "LogIn";
+            this.LogIn.Text = "Prisijungti";
             this.LogIn.UseVisualStyleBackColor = true;
             this.LogIn.Click += new System.EventHandler(this.LogIn_Click);
             // 
             // UserNameBox
             // 
-            this.UserNameBox.Location = new System.Drawing.Point(333, 149);
+            this.UserNameBox.Location = new System.Drawing.Point(349, 152);
             this.UserNameBox.Name = "UserNameBox";
             this.UserNameBox.Size = new System.Drawing.Size(100, 20);
             this.UserNameBox.TabIndex = 2;
             // 
             // PasswordBox
             // 
-            this.PasswordBox.Location = new System.Drawing.Point(333, 175);
+            this.PasswordBox.Location = new System.Drawing.Point(349, 178);
             this.PasswordBox.Name = "PasswordBox";
             this.PasswordBox.Size = new System.Drawing.Size(100, 20);
             this.PasswordBox.TabIndex = 3;
@@ -65,7 +65,7 @@ namespace Akademine_IS
             // UserName
             // 
             this.UserName.AutoSize = true;
-            this.UserName.Location = new System.Drawing.Point(260, 152);
+            this.UserName.Location = new System.Drawing.Point(276, 155);
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(54, 13);
             this.UserName.TabIndex = 4;
@@ -74,7 +74,7 @@ namespace Akademine_IS
             // Password
             // 
             this.Password.AutoSize = true;
-            this.Password.Location = new System.Drawing.Point(260, 178);
+            this.Password.Location = new System.Drawing.Point(269, 181);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(61, 13);
             this.Password.TabIndex = 5;

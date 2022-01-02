@@ -45,7 +45,8 @@ namespace Akademine_IS
             // 
             // Nustatymai
             // 
-            this.Nustatymai.Location = new System.Drawing.Point(164, 233);
+            this.Nustatymai.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.Nustatymai.Location = new System.Drawing.Point(137, 175);
             this.Nustatymai.Name = "Nustatymai";
             this.Nustatymai.Size = new System.Drawing.Size(237, 74);
             this.Nustatymai.TabIndex = 11;
@@ -55,7 +56,8 @@ namespace Akademine_IS
             // 
             // PerziuretiPazymi
             // 
-            this.PerziuretiPazymi.Location = new System.Drawing.Point(464, 233);
+            this.PerziuretiPazymi.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.PerziuretiPazymi.Location = new System.Drawing.Point(437, 175);
             this.PerziuretiPazymi.Name = "PerziuretiPazymi";
             this.PerziuretiPazymi.Size = new System.Drawing.Size(237, 74);
             this.PerziuretiPazymi.TabIndex = 10;

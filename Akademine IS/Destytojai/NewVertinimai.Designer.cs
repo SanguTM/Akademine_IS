@@ -49,7 +49,7 @@ namespace Akademine_IS
             // 
             // Isaugoti
             // 
-            this.Isaugoti.Location = new System.Drawing.Point(245, 353);
+            this.Isaugoti.Location = new System.Drawing.Point(231, 353);
             this.Isaugoti.Name = "Isaugoti";
             this.Isaugoti.Size = new System.Drawing.Size(75, 23);
             this.Isaugoti.TabIndex = 48;
@@ -74,7 +74,7 @@ namespace Akademine_IS
             // Pastaba
             // 
             this.Pastaba.AutoSize = true;
-            this.Pastaba.Location = new System.Drawing.Point(258, 185);
+            this.Pastaba.Location = new System.Drawing.Point(260, 185);
             this.Pastaba.Name = "Pastaba";
             this.Pastaba.Size = new System.Drawing.Size(46, 13);
             this.Pastaba.TabIndex = 38;
@@ -83,7 +83,7 @@ namespace Akademine_IS
             // Pazymys
             // 
             this.Pazymys.AutoSize = true;
-            this.Pazymys.Location = new System.Drawing.Point(256, 150);
+            this.Pazymys.Location = new System.Drawing.Point(258, 150);
             this.Pazymys.Name = "Pazymys";
             this.Pazymys.Size = new System.Drawing.Size(48, 13);
             this.Pazymys.TabIndex = 37;

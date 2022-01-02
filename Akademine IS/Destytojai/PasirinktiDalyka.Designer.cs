@@ -30,6 +30,7 @@ namespace Akademine_IS
         private void InitializeComponent()
         {
             this.DestDalykaiGridView = new System.Windows.Forms.DataGridView();
+            this.Pasirinkti = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DestDalykaiGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,11 +44,22 @@ namespace Akademine_IS
             this.DestDalykaiGridView.TabIndex = 2;
             this.DestDalykaiGridView.DoubleClick += new System.EventHandler(this.DestDalykaiGridView_DoubleClick);
             // 
+            // Pasirinkti
+            // 
+            this.Pasirinkti.Location = new System.Drawing.Point(44, 26);
+            this.Pasirinkti.Name = "Pasirinkti";
+            this.Pasirinkti.Size = new System.Drawing.Size(75, 23);
+            this.Pasirinkti.TabIndex = 3;
+            this.Pasirinkti.Text = "Pasirinkti";
+            this.Pasirinkti.UseVisualStyleBackColor = true;
+            this.Pasirinkti.Click += new System.EventHandler(this.Pasirinkti_Click);
+            // 
             // PasirinktiDalyka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Pasirinkti);
             this.Controls.Add(this.DestDalykaiGridView);
             this.Name = "PasirinktiDalyka";
             this.Text = "PasirinktiDalyka";
@@ -59,5 +71,6 @@ namespace Akademine_IS
         #endregion
 
         private System.Windows.Forms.DataGridView DestDalykaiGridView;
+        private System.Windows.Forms.Button Pasirinkti;
     }
 }

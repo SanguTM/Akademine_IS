@@ -55,7 +55,7 @@ namespace Akademine_IS
             // 
             // Isaugoti
             // 
-            this.Isaugoti.Location = new System.Drawing.Point(275, 353);
+            this.Isaugoti.Location = new System.Drawing.Point(248, 353);
             this.Isaugoti.Name = "Isaugoti";
             this.Isaugoti.Size = new System.Drawing.Size(75, 23);
             this.Isaugoti.TabIndex = 44;
@@ -102,7 +102,7 @@ namespace Akademine_IS
             // AsmensKodas
             // 
             this.AsmensKodas.AutoSize = true;
-            this.AsmensKodas.Location = new System.Drawing.Point(247, 218);
+            this.AsmensKodas.Location = new System.Drawing.Point(247, 215);
             this.AsmensKodas.Name = "AsmensKodas";
             this.AsmensKodas.Size = new System.Drawing.Size(76, 13);
             this.AsmensKodas.TabIndex = 38;
@@ -111,7 +111,7 @@ namespace Akademine_IS
             // Amzius
             // 
             this.Amzius.AutoSize = true;
-            this.Amzius.Location = new System.Drawing.Point(261, 185);
+            this.Amzius.Location = new System.Drawing.Point(283, 185);
             this.Amzius.Name = "Amzius";
             this.Amzius.Size = new System.Drawing.Size(40, 13);
             this.Amzius.TabIndex = 37;
@@ -120,7 +120,7 @@ namespace Akademine_IS
             // Pavarde
             // 
             this.Pavarde.AutoSize = true;
-            this.Pavarde.Location = new System.Drawing.Point(268, 150);
+            this.Pavarde.Location = new System.Drawing.Point(276, 150);
             this.Pavarde.Name = "Pavarde";
             this.Pavarde.Size = new System.Drawing.Size(47, 13);
             this.Pavarde.TabIndex = 36;
@@ -129,7 +129,7 @@ namespace Akademine_IS
             // Vardas
             // 
             this.Vardas.AutoSize = true;
-            this.Vardas.Location = new System.Drawing.Point(298, 116);
+            this.Vardas.Location = new System.Drawing.Point(283, 116);
             this.Vardas.Name = "Vardas";
             this.Vardas.Size = new System.Drawing.Size(40, 13);
             this.Vardas.TabIndex = 35;
@@ -138,7 +138,7 @@ namespace Akademine_IS
             // AsmuoId
             // 
             this.AsmuoId.AutoSize = true;
-            this.AsmuoId.Location = new System.Drawing.Point(272, 77);
+            this.AsmuoId.Location = new System.Drawing.Point(272, 81);
             this.AsmuoId.Name = "AsmuoId";
             this.AsmuoId.Size = new System.Drawing.Size(51, 13);
             this.AsmuoId.TabIndex = 34;

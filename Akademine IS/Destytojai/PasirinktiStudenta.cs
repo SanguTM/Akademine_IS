@@ -71,5 +71,22 @@ namespace Akademine_IS
                 }
             }
         }
+
+        private void Pasirinkti_Click(object sender, EventArgs e)
+        {
+            if (DestStudentaiGridView.SelectedCells.Count > 0)
+            {
+                DataRowView drv = ((DataTable)DestStudentaiGridView.DataSource).DefaultView[DestStudentaiGridView.SelectedCells[0].RowIndex];
+                if (drv != null)
+                {
+                    if (drv.Row["StudentoId"] != null)
+                    {
+                        int Id = Convert.ToInt32(drv.Row["StudentoId"]);
+                        StudentoPazymiai v = new StudentoPazymiai(dh, Id, stddalykaiId, dest);
+                        v.ShowDialog();
+                    }
+                }
+            }
+        }
     }
 }

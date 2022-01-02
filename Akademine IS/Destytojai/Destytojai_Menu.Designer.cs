@@ -36,6 +36,7 @@ namespace Akademine_IS
             // 
             // Nustatymai
             // 
+            this.Nustatymai.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.Nustatymai.Location = new System.Drawing.Point(132, 129);
             this.Nustatymai.Name = "Nustatymai";
             this.Nustatymai.Size = new System.Drawing.Size(237, 74);
@@ -46,6 +47,7 @@ namespace Akademine_IS
             // 
             // IrasytiPazymi
             // 
+            this.IrasytiPazymi.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.IrasytiPazymi.Location = new System.Drawing.Point(432, 129);
             this.IrasytiPazymi.Name = "IrasytiPazymi";
             this.IrasytiPazymi.Size = new System.Drawing.Size(237, 74);

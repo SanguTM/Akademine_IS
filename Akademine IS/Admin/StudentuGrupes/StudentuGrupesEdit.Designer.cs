@@ -43,7 +43,7 @@ namespace Akademine_IS
             // 
             // PriskirtiStudenta
             // 
-            this.PriskirtiStudenta.Location = new System.Drawing.Point(441, 218);
+            this.PriskirtiStudenta.Location = new System.Drawing.Point(483, 24);
             this.PriskirtiStudenta.Name = "PriskirtiStudenta";
             this.PriskirtiStudenta.Size = new System.Drawing.Size(100, 23);
             this.PriskirtiStudenta.TabIndex = 80;
@@ -63,7 +63,7 @@ namespace Akademine_IS
             // 
             // Isaugoti
             // 
-            this.Isaugoti.Location = new System.Drawing.Point(263, 353);
+            this.Isaugoti.Location = new System.Drawing.Point(270, 353);
             this.Isaugoti.Name = "Isaugoti";
             this.Isaugoti.Size = new System.Drawing.Size(75, 23);
             this.Isaugoti.TabIndex = 78;
@@ -114,7 +114,7 @@ namespace Akademine_IS
             // StudentuGrupesId
             // 
             this.StudentuGrupesId.AutoSize = true;
-            this.StudentuGrupesId.Location = new System.Drawing.Point(260, 77);
+            this.StudentuGrupesId.Location = new System.Drawing.Point(248, 81);
             this.StudentuGrupesId.Name = "StudentuGrupesId";
             this.StudentuGrupesId.Size = new System.Drawing.Size(97, 13);
             this.StudentuGrupesId.TabIndex = 70;
@@ -122,7 +122,7 @@ namespace Akademine_IS
             // 
             // PriskirtiDalykus
             // 
-            this.PriskirtiDalykus.Location = new System.Drawing.Point(441, 247);
+            this.PriskirtiDalykus.Location = new System.Drawing.Point(601, 24);
             this.PriskirtiDalykus.Name = "PriskirtiDalykus";
             this.PriskirtiDalykus.Size = new System.Drawing.Size(100, 23);
             this.PriskirtiDalykus.TabIndex = 81;

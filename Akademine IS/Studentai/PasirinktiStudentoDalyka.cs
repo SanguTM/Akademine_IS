@@ -67,5 +67,22 @@ namespace Akademine_IS
                 }
             }
         }
+
+        private void Pasirinkti_Click(object sender, EventArgs e)
+        {
+            if (StudDalykaiGridView.SelectedCells.Count > 0)
+            {
+                DataRowView drv = ((DataTable)StudDalykaiGridView.DataSource).DefaultView[StudDalykaiGridView.SelectedCells[0].RowIndex];
+                if (drv != null)
+                {
+                    if (drv.Row["StdDalykoId"] != null)
+                    {
+                        int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
+                        PerziuretiPazymi v = new PerziuretiPazymi(dh, stud, Id);
+                        v.ShowDialog();
+                    }
+                }
+            }
+        }
     }
 }

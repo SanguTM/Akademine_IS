@@ -54,7 +54,7 @@ namespace Akademine_IS
             // 
             // Isaugoti
             // 
-            this.Isaugoti.Location = new System.Drawing.Point(275, 353);
+            this.Isaugoti.Location = new System.Drawing.Point(268, 353);
             this.Isaugoti.Name = "Isaugoti";
             this.Isaugoti.Size = new System.Drawing.Size(75, 23);
             this.Isaugoti.TabIndex = 56;
@@ -94,7 +94,7 @@ namespace Akademine_IS
             // Aprasymas
             // 
             this.Aprasymas.AutoSize = true;
-            this.Aprasymas.Location = new System.Drawing.Point(299, 185);
+            this.Aprasymas.Location = new System.Drawing.Point(292, 185);
             this.Aprasymas.Name = "Aprasymas";
             this.Aprasymas.Size = new System.Drawing.Size(58, 13);
             this.Aprasymas.TabIndex = 49;
@@ -103,7 +103,7 @@ namespace Akademine_IS
             // Pavadinimas
             // 
             this.Pavadinimas.AutoSize = true;
-            this.Pavadinimas.Location = new System.Drawing.Point(290, 150);
+            this.Pavadinimas.Location = new System.Drawing.Point(283, 150);
             this.Pavadinimas.Name = "Pavadinimas";
             this.Pavadinimas.Size = new System.Drawing.Size(67, 13);
             this.Pavadinimas.TabIndex = 48;
@@ -112,7 +112,7 @@ namespace Akademine_IS
             // Kodas
             // 
             this.Kodas.AutoSize = true;
-            this.Kodas.Location = new System.Drawing.Point(320, 116);
+            this.Kodas.Location = new System.Drawing.Point(313, 116);
             this.Kodas.Name = "Kodas";
             this.Kodas.Size = new System.Drawing.Size(37, 13);
             this.Kodas.TabIndex = 47;
@@ -121,7 +121,7 @@ namespace Akademine_IS
             // StdDalykoId
             // 
             this.StdDalykoId.AutoSize = true;
-            this.StdDalykoId.Location = new System.Drawing.Point(272, 77);
+            this.StdDalykoId.Location = new System.Drawing.Point(265, 81);
             this.StdDalykoId.Name = "StdDalykoId";
             this.StdDalykoId.Size = new System.Drawing.Size(85, 13);
             this.StdDalykoId.TabIndex = 46;
@@ -129,12 +129,13 @@ namespace Akademine_IS
             // 
             // PriskirtiDestytoja
             // 
-            this.PriskirtiDestytoja.Location = new System.Drawing.Point(453, 218);
+            this.PriskirtiDestytoja.Location = new System.Drawing.Point(587, 23);
             this.PriskirtiDestytoja.Name = "PriskirtiDestytoja";
             this.PriskirtiDestytoja.Size = new System.Drawing.Size(100, 23);
             this.PriskirtiDestytoja.TabIndex = 58;
             this.PriskirtiDestytoja.Text = "Priskirti dėstytoją";
             this.PriskirtiDestytoja.UseVisualStyleBackColor = true;
+            this.PriskirtiDestytoja.Visible = false;
             this.PriskirtiDestytoja.Click += new System.EventHandler(this.PriskirtiDestytoja_Click);
             // 
             // StudijuDalykaiCreate

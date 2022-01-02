@@ -1,0 +1,42 @@
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Release\DB.ini
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Release\Akademine IS.exe.config
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Release\Akademine IS.exe
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\bin\Release\Akademine IS.pdb
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine IS.csprojAssemblyReference.cache
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Asmenys.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.AsmenysCreate.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.AsmenysEdit.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.DalykaiSelection.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PriskirtiStudenta.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PriskirtiStudentuGrupesDalykus.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudentuGrupesEdit.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.DestytojaiSelection.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PriskirtiDestytoja.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudijuDalykai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudijuDalykaiCreate.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudijuDalykaiEdit.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.AsmenysSelection.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.VartTipaiSelection.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Vartotojai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Destytojai_Menu.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.NewVertinimai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PasirinktiDalyka.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudentoPazymiai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Login_screen.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Admin_MainMenu.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Nustatymai.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PasirinktiStudentuGrupe.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PasirinktiStudenta.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.Properties.Resources.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.VartotojaiCreate.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.VartotojaiEdit.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudentuGrupes.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudentaiSelection.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudentuGrupesCreate.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PasirinktiStudentoDalyka.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.PerziuretiPazymi.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine_IS.StudentoMenu.resources
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine IS.csproj.GenerateResource.cache
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine IS.csproj.CoreCompileInputs.cache
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine IS.exe
+F:\Paskaitos\Programavimo praktika 2\Akademine_IS\Akademine_IS\Akademine IS\obj\Release\Akademine IS.pdb
