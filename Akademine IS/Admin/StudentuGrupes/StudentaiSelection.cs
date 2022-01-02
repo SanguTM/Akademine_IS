@@ -88,6 +88,7 @@ namespace Akademine_IS
         private DataTable GetAsmenys()
         {
             t_StoredProc uspv_Asmenys = new t_StoredProc(dh, "uspv_Asmenys");
+            uspv_Asmenys.ParamByName("@piPriskirti").Value = 2;
             return uspv_Asmenys.Open();
         }
     }

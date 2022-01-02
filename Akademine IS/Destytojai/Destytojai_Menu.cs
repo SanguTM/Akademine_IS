@@ -24,9 +24,6 @@ namespace Akademine_IS
             userid = UserId;
             dh = DataHandler;
             asmuoid = AsmuoId;
-
-            Login_screen ls = new Login_screen();
-            ls.Close();
         }
 
         private void Nustatymai_Click(object sender, EventArgs e)

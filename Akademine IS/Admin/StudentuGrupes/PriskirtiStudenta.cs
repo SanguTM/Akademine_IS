@@ -53,7 +53,7 @@ namespace Akademine_IS
 
         private DataTable GetStudentai(int StudentuGrupesId)
         {
-            t_StoredProc uspv_StudentuGrupesStudentai = new t_StoredProc(dh, "uspv_DestytojuPaskaitos");
+            t_StoredProc uspv_StudentuGrupesStudentai = new t_StoredProc(dh, "uspv_StudentuGrupesStudentai");
             uspv_StudentuGrupesStudentai.ParamByName("@piPriskirtiStudenta").Value = 1;
             uspv_StudentuGrupesStudentai.ParamByName("@piStudentuGrupesId").Value = StudentuGrupesId;
             return uspv_StudentuGrupesStudentai.Open();
@@ -79,6 +79,7 @@ namespace Akademine_IS
                 uspi_StudentuGrupesStudentai.ParamByName("@piStudentoId").Value = AsmuoId;
 
                 uspi_StudentuGrupesStudentai.Execute();
+                PriskirtiStudentaGridView.DataSource = GetStudentai(std);
             }
         }
 
@@ -102,9 +103,15 @@ namespace Akademine_IS
                         uspd_DestytojuPaskaitos.ParamByName("@piStudentuGrupesId").Value = Id;
                         uspd_DestytojuPaskaitos.ParamByName("@piStudentoId").Value = StudentaiId;
                         uspd_DestytojuPaskaitos.Execute();
+                        PriskirtiStudentaGridView.DataSource = GetStudentai(Id);
                     }
                 }
             }
+        }
+
+        private void CloseForm_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

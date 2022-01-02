@@ -26,12 +26,11 @@ namespace Akademine_IS
 
             dh = DataHandler;
             t_StoredProc uspv_StudijuDalykai = new t_StoredProc(DataHandler, "uspv_StudijuDalykai");
-            uspv_StudijuDalykai.ParamByName("@piPriskirti").Value = 2;
             DataTable table_uspv_StudijuDalykai = uspv_StudijuDalykai.Open();
 
             InitializeComponent();
 
-            DalykaiSelectionGridView.DataSource = GetAsmenys();
+            DalykaiSelectionGridView.DataSource = GetStudijuDalykai();
 
             int i = 0;
             while (i < DalykaiSelectionGridView.Columns.Count)
@@ -53,10 +52,10 @@ namespace Akademine_IS
             DalykaiSelectionGridView.Columns[3].HeaderText = "Aprašymas";
         }
 
-        private DataTable GetAsmenys()
+        private DataTable GetStudijuDalykai()
         {
-            t_StoredProc uspv_Asmenys = new t_StoredProc(dh, "uspv_Asmenys");
-            return uspv_Asmenys.Open();
+            t_StoredProc uspv_StudijuDalykai = new t_StoredProc(dh, "uspv_StudijuDalykai");
+            return uspv_StudijuDalykai.Open();
         }
 
         private void DalykaiSelectionGridView_DoubleClick(object sender, EventArgs e)

@@ -34,10 +34,10 @@ namespace Akademine_IS
             this.Isaugoti = new System.Windows.Forms.Button();
             this.PavadinimasBox = new System.Windows.Forms.TextBox();
             this.KodasBox = new System.Windows.Forms.TextBox();
-            this.StdDalykoIdBox = new System.Windows.Forms.TextBox();
+            this.StudentuGrupesIdBox = new System.Windows.Forms.TextBox();
             this.Pavadinimas = new System.Windows.Forms.Label();
             this.Kodas = new System.Windows.Forms.Label();
-            this.StudentuGrupesIdBox = new System.Windows.Forms.Label();
+            this.StudentuGrupesId = new System.Windows.Forms.Label();
             this.PriskirtiDalykus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -85,13 +85,13 @@ namespace Akademine_IS
             this.KodasBox.Size = new System.Drawing.Size(100, 20);
             this.KodasBox.TabIndex = 75;
             // 
-            // StdDalykoIdBox
+            // StudentuGrupesIdBox
             // 
-            this.StdDalykoIdBox.Location = new System.Drawing.Point(441, 74);
-            this.StdDalykoIdBox.Name = "StdDalykoIdBox";
-            this.StdDalykoIdBox.ReadOnly = true;
-            this.StdDalykoIdBox.Size = new System.Drawing.Size(100, 20);
-            this.StdDalykoIdBox.TabIndex = 74;
+            this.StudentuGrupesIdBox.Location = new System.Drawing.Point(441, 74);
+            this.StudentuGrupesIdBox.Name = "StudentuGrupesIdBox";
+            this.StudentuGrupesIdBox.ReadOnly = true;
+            this.StudentuGrupesIdBox.Size = new System.Drawing.Size(100, 20);
+            this.StudentuGrupesIdBox.TabIndex = 74;
             // 
             // Pavadinimas
             // 
@@ -111,14 +111,14 @@ namespace Akademine_IS
             this.Kodas.TabIndex = 71;
             this.Kodas.Text = "Kodas";
             // 
-            // StudentuGrupesIdBox
+            // StudentuGrupesId
             // 
-            this.StudentuGrupesIdBox.AutoSize = true;
-            this.StudentuGrupesIdBox.Location = new System.Drawing.Point(260, 77);
-            this.StudentuGrupesIdBox.Name = "StudentuGrupesIdBox";
-            this.StudentuGrupesIdBox.Size = new System.Drawing.Size(97, 13);
-            this.StudentuGrupesIdBox.TabIndex = 70;
-            this.StudentuGrupesIdBox.Text = "Studentų grupes Id";
+            this.StudentuGrupesId.AutoSize = true;
+            this.StudentuGrupesId.Location = new System.Drawing.Point(260, 77);
+            this.StudentuGrupesId.Name = "StudentuGrupesId";
+            this.StudentuGrupesId.Size = new System.Drawing.Size(97, 13);
+            this.StudentuGrupesId.TabIndex = 70;
+            this.StudentuGrupesId.Text = "Studentų grupes Id";
             // 
             // PriskirtiDalykus
             // 
@@ -141,10 +141,10 @@ namespace Akademine_IS
             this.Controls.Add(this.Isaugoti);
             this.Controls.Add(this.PavadinimasBox);
             this.Controls.Add(this.KodasBox);
-            this.Controls.Add(this.StdDalykoIdBox);
+            this.Controls.Add(this.StudentuGrupesIdBox);
             this.Controls.Add(this.Pavadinimas);
             this.Controls.Add(this.Kodas);
-            this.Controls.Add(this.StudentuGrupesIdBox);
+            this.Controls.Add(this.StudentuGrupesId);
             this.Name = "StudentuGrupesEdit";
             this.Text = "StudentuGrupesEdit";
             this.ResumeLayout(false);
@@ -159,10 +159,10 @@ namespace Akademine_IS
         private System.Windows.Forms.Button Isaugoti;
         private System.Windows.Forms.TextBox PavadinimasBox;
         private System.Windows.Forms.TextBox KodasBox;
-        private System.Windows.Forms.TextBox StdDalykoIdBox;
+        private System.Windows.Forms.TextBox StudentuGrupesIdBox;
         private System.Windows.Forms.Label Pavadinimas;
         private System.Windows.Forms.Label Kodas;
-        private System.Windows.Forms.Label StudentuGrupesIdBox;
+        private System.Windows.Forms.Label StudentuGrupesId;
         private System.Windows.Forms.Button PriskirtiDalykus;
     }
 }

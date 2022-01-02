@@ -24,7 +24,7 @@ namespace Akademine_IS
         {
             stud = StudentaiId;
             dh = DataHandler;
-            t_StoredProc uspv_StudentoDalykai = new t_StoredProc(DataHandler, "uspv_DestytojuPaskaitos");
+            t_StoredProc uspv_StudentoDalykai = new t_StoredProc(DataHandler, "uspv_StudentoDalykai");
             uspv_StudentoDalykai.ParamByName("@piStudentaiId").Value = StudentaiId;
             DataTable table_uspv_DestytojuPaskaitos = uspv_StudentoDalykai.Open();
 
@@ -61,7 +61,7 @@ namespace Akademine_IS
                     if (drv.Row["StdDalykoId"] != null)
                     {
                         int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
-                        PerziuretiPazymi v = new PerziuretiPazymi(dh, Id, stud);
+                        PerziuretiPazymi v = new PerziuretiPazymi(dh, stud, Id);
                         v.ShowDialog();
                     }
                 }

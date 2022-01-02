@@ -20,6 +20,11 @@ namespace Akademine_IS
         public StudentoMenu(t_DataHandler DataHandler, string UserType, string User, int UserId, int AsmuoId)
         {
             InitializeComponent();
+            CurrentUser.Text = User;
+            usertype = UserType;
+            userid = UserId;
+            dh = DataHandler;
+            asmuoid = AsmuoId;
         }
 
         private void Nustatymai_Click(object sender, EventArgs e)

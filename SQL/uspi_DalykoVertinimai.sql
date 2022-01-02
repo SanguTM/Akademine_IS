@@ -6,9 +6,9 @@ create procedure uspi_DalykoVertinimai
   @poValue int = null output,
 	@piStdDalykoId int = null,
 	@piStudentaiId int = null,
-	@piDestytojaiId int = null
+	@piDestytojaiId int = null,
 	@piVertinimas int = null,
-	@piPastaba int = null
+	@piPastaba nvarchar(max) = null
 as
 
 declare @vError nvarchar(max), @vVartotojuTipaiId int, @vNewRecId int, @vData datetime
@@ -18,26 +18,21 @@ select @poValue = -1
 select @vData = getdate();
 
 insert into DalykoVertinimai(
-	
+	StdDalykoId,
+	Vertinimas,
+	StudentaiId,
+	DestytojaiId,
+	Data,
+	Pastaba
+)
+values(
+	@piStdDalykoId,
+	@piVertinimas,
+	@piStudentaiId,
+	@piDestytojaiId,
+	@vData,
+	@piPastaba)
 
-if not EXISTS(SELECT 1 FROM StudijuDalykai WHERE Kodas = @piKodas)
-begin
-  insert into StudijuDalykai(
-    StdDalykoId,
-    Vertinimas,
-		StudentaiId,
-		DestytojaiId,
-		Data,
-		Pastaba
-  )
-  values(
-    @piStdDalykoId,
-    @piVertinimas,
-		@piStudentaiId,
-		@piDestytojaiId,
-		@vData,
-		@piPastaba)
-end
 	
 select @vNewRecId = scope_identity()
 

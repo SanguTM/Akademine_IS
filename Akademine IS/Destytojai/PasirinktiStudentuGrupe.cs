@@ -26,19 +26,18 @@ namespace Akademine_IS
             std = StdDalykoId;
             dh = DataHandler;
             dest = DestytojaiId;
-            t_StoredProc uspv_StudentuGrupesDalykai = new t_StoredProc(DataHandler, "uspv_StudentuGrupesDalykai");
-            uspv_StudentuGrupesDalykai.ParamByName("@piPriskirtiDestytojus").Value = 0;
-            uspv_StudentuGrupesDalykai.ParamByName("@piStdDalykoId").Value = StdDalykoId;
-            DataTable table_uspv_DestytojuPaskaitos = uspv_StudentuGrupesDalykai.Open();
+            t_StoredProc uspv_StudentuGrupes = new t_StoredProc(DataHandler, "uspv_StudentuGrupes");
+            uspv_StudentuGrupes.ParamByName("@piStdDalykoId").Value = StdDalykoId;
+            DataTable table_uspv_StudentuGrupes = uspv_StudentuGrupes.Open();
 
             InitializeComponent();
-            DestStudentuGrupesGridView.DataSource = table_uspv_DestytojuPaskaitos;
+            DestStudentuGrupesGridView.DataSource = table_uspv_StudentuGrupes;
 
             int i = 0;
             while (i < DestStudentuGrupesGridView.Columns.Count)
             {
                 if (DestStudentuGrupesGridView.Columns[i].Name.ToUpper().Equals("PAVADINIMAS") || DestStudentuGrupesGridView.Columns[i].Name.ToUpper().Equals("Kodas")
-                    || DestStudentuGrupesGridView.Columns[i].Name.ToUpper().Equals("STUDENTUGRUPESID"))
+                    || DestStudentuGrupesGridView.Columns[i].Name.ToUpper().Equals("STUDENTUGRUPESID") || DestStudentuGrupesGridView.Columns[i].Name.ToUpper().Equals("STDDALYKOID"))
                 {
                     DestStudentuGrupesGridView.Columns[i].Visible = true;
                 }

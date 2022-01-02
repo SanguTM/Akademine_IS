@@ -134,10 +134,12 @@ Vardas nvarchar(255) null,
 Pavarde nvarchar(255) null,
 Amzius int null,
 AsmensKodas nvarchar(255) null)
-
+GO
 
 
 /*insert into Asmenys(Vardas, Pavarde, Amzius, AsmensKodas)
 values('Linas', 'Jurevicius', 33, 388)
 insert into Asmenys(Vardas, Pavarde, Amzius, AsmensKodas)
 values('Vardenis', 'Pavardenis', 18, 3555)*/
+
+

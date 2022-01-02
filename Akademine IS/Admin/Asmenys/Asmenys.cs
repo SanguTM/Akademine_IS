@@ -125,6 +125,7 @@ namespace Akademine_IS
                         t_StoredProc uspd_Asmenys = new t_StoredProc(dh, "uspd_Asmenys");
                         uspd_Asmenys.ParamByName("@piAsmuoId").Value = Id;
                         uspd_Asmenys.Execute();
+                        AsmenysGridView.DataSource = GetAsmenys();
                     }
                 }
             }

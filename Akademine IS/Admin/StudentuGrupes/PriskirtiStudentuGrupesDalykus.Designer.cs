@@ -29,7 +29,6 @@ namespace Akademine_IS
         /// </summary>
         private void InitializeComponent()
         {
-            this.Redaguoti = new System.Windows.Forms.Button();
             this.Istrinti = new System.Windows.Forms.Button();
             this.Naujas = new System.Windows.Forms.Button();
             this.CloseForm = new System.Windows.Forms.Button();
@@ -37,19 +36,9 @@ namespace Akademine_IS
             ((System.ComponentModel.ISupportInitialize)(this.PriskirtiStudentoGrupesDalykusGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // Redaguoti
-            // 
-            this.Redaguoti.Location = new System.Drawing.Point(170, 22);
-            this.Redaguoti.Name = "Redaguoti";
-            this.Redaguoti.Size = new System.Drawing.Size(75, 23);
-            this.Redaguoti.TabIndex = 25;
-            this.Redaguoti.Text = "Redaguoti";
-            this.Redaguoti.UseVisualStyleBackColor = true;
-            this.Redaguoti.Click += new System.EventHandler(this.Redaguoti_Click);
-            // 
             // Istrinti
             // 
-            this.Istrinti.Location = new System.Drawing.Point(299, 22);
+            this.Istrinti.Location = new System.Drawing.Point(169, 22);
             this.Istrinti.Name = "Istrinti";
             this.Istrinti.Size = new System.Drawing.Size(75, 23);
             this.Istrinti.TabIndex = 24;
@@ -92,7 +81,6 @@ namespace Akademine_IS
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Redaguoti);
             this.Controls.Add(this.Istrinti);
             this.Controls.Add(this.Naujas);
             this.Controls.Add(this.CloseForm);
@@ -105,8 +93,6 @@ namespace Akademine_IS
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Redaguoti;
         private System.Windows.Forms.Button Istrinti;
         private System.Windows.Forms.Button Naujas;
         private System.Windows.Forms.Button CloseForm;

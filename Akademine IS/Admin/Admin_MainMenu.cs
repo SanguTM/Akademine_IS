@@ -22,9 +22,6 @@ namespace Akademine_IS
             CurrentUser.Text = User;
             usertype = UserType;
             dh = DataHandler;
-
-            Login_screen ls = new Login_screen();
-            ls.Close();
         }
 
         private void Vartotojai_Click(object sender, EventArgs e)
@@ -47,7 +44,8 @@ namespace Akademine_IS
 
         private void StudentuGrupes_Click(object sender, EventArgs e)
         {
-
+            StudentuGrupes sg = new StudentuGrupes(dh, usertype, CurrentUser.Text);
+            sg.ShowDialog();
         }
     }
 }

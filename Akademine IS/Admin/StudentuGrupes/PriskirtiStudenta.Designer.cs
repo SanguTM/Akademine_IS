@@ -75,6 +75,7 @@ namespace Akademine_IS
             this.CloseForm.TabIndex = 17;
             this.CloseForm.Text = "Uzdaryti";
             this.CloseForm.UseVisualStyleBackColor = true;
+            this.CloseForm.Click += new System.EventHandler(this.CloseForm_Click);
             // 
             // PriskirtiStudentaGridView
             // 

@@ -10,7 +10,7 @@ create procedure uspu_Vartotojai
 	@piVartotojuTipaiId nvarchar(255) = null,
 	@piAsmuoId int = null,
 	@piSlaptazodis nvarchar(255) = null,
-	@piArAktyvus tinyint = null
+	@piArAktyvus int = null
 as
 
 declare @vError nvarchar(max), @vVartotojuTipaiId int, @vCurrKodas nvarchar(50), @vCurrPavadinimas nvarchar(255), @vCurrVartotojuTipaiId int, 
@@ -18,6 +18,8 @@ declare @vError nvarchar(max), @vVartotojuTipaiId int, @vCurrKodas nvarchar(50),
 	
 
 select @poValue = -1
+
+if isnull(@piArAktyvus, -1) = -1
 
 select 
 	@vCurrKodas = Kodas,
@@ -28,6 +30,9 @@ select
 	@vCurrArAktyvus = Aktyvus
 from Vartotojai
 where VartotojaiId = @piVartotojaiId
+
+if isnull(@piArAktyvus, -1) = -1
+	set @piArAktyvus = @vCurrArAktyvus
 
 update Vartotojai set
 	Kodas = @piKodas,

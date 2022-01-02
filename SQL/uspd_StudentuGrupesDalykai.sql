@@ -1,4 +1,4 @@
-if exists (select 1 from sysobjects where name = 'uspd_StudentuGrupesStudentai ')
+if exists (select 1 from sysobjects where name = 'uspd_StudentuGrupesDalykai')
 drop procedure uspd_StudentuGrupesDalykai 
 go
 

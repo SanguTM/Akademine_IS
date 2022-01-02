@@ -29,7 +29,7 @@ if @piPriskirtiStudenta = 1
 if @piPriskirtiStudenta = 0
 	select 
 		Vardas = a.Vardas,
-		Pavarde = a.Pavarde
+		Pavarde = a.Pavarde,
 		StudentoId = a.AsmuoId
 	from StudentuGrupesStudentai dp
 		left join Asmenys a on a.AsmuoId = dp.StudentoId

@@ -5,8 +5,7 @@ go
 create procedure uspi_StudentuGrupes
   @poValue int = null output,
 	@piKodas nvarchar(50) = null,
-	@piPavadinimas nvarchar(255) = null,
-	@piAprasymas nvarchar(max) = null
+	@piPavadinimas nvarchar(255) = null
 as
 
 declare @vError nvarchar(max), @vVartotojuTipaiId int, @vNewRecId int
@@ -14,9 +13,9 @@ declare @vError nvarchar(max), @vVartotojuTipaiId int, @vNewRecId int
 
 select @poValue = -1
 
-if not EXISTS(SELECT 1 FROM StudijuDalykai WHERE Kodas = @piKodas)
+if not EXISTS(SELECT 1 FROM StudentuGrupes WHERE Kodas = @piKodas)
 begin
-  insert into StudijuDalykai(
+  insert into StudentuGrupes(
     Kodas,
     Pavadinimas
   )

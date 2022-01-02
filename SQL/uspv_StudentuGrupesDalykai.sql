@@ -29,9 +29,10 @@ if @piPriskirtiGrupe = 1
 
 if @piPriskirtiGrupe = 0
 	select 
-		Pavadinimas = a.Pavadinimas,
-		Kodas = a.Kodas,
-		StudentuGrupesId = dp.StudentuGrupesId
+		Pavadinimas = sd.Pavadinimas,
+		Kodas = sd.Kodas,
+		StudentuGrupesId = dp.StudentuGrupesId,
+		StdDalykoId = sd.StdDalykoId
 	from StudentuGrupesDalykai dp
 		left join StudentuGrupes a on a.StudentuGrupesId = dp.StudentuGrupesId
 		left join StudijuDalykai sd on sd.StdDalykoId = dp.StdDalykoId

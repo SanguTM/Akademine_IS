@@ -6,7 +6,7 @@ create procedure uspv_DalykoVertinimai
   @poValue int = null output,
 	@piStdDalykoId int = null,
 	@piStudentaiId int = null,
-	@piDestytojas int = null,
+	@piDestytojas int = null
 as
 
 declare @vError nvarchar(max)
@@ -17,17 +17,17 @@ select @piDestytojas = isnull(@piDestytojas, 0)
 
 if @piDestytojas = 0
 	select 
-		Vartinimas = Vartinimas,
+		Vartinimas = Vertinimas,
 		Data = Data,
-		Pastaba = Pastaba
+		Pastaba = Pastaba,
 		Destytojas = a.Vardas + ' ' + a.Pavarde		
 	from DalykoVertinimai dv
 		inner join Asmenys a on a.AsmuoId = dv.DestytojaiId
-	where dv.StdDalykoId = case when @piStdDalykoId then @piStdDalykoId else dv.StdDalykoId end
+	where dv.StdDalykoId = case when isnull(@piStdDalykoId, 0) = 0 then dv.StdDalykoId else @piStdDalykoId end
 
 if @piDestytojas = 1
 	select 
-		Vartinimas = Vartinimas,
+		Vartinimas = Vertinimas,
 		Data = Data,
 		Pastaba = Pastaba
 	from DalykoVertinimai 

@@ -37,7 +37,7 @@ if @vAktyvus = 0
 select @poValue = @vVartotojuTipaiId
 select @poUser = @vPavadinimas
 select @poUserId = @vVartotojaiId
-select @poAsmuoId = isnull(@vVartotojaiId, 0)
+select @poAsmuoId = isnull(@vAsmuoId, 0)
 
 return
 	

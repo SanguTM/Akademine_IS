@@ -55,7 +55,7 @@ namespace Akademine_IS
         private DataTable GetStudentai(int StudentuGrupesId)
         {
             t_StoredProc uspv_StudentuGrupesDalykai = new t_StoredProc(dh, "uspv_StudentuGrupesDalykai");
-            uspv_StudentuGrupesDalykai.ParamByName("@piPriskirtiStudenta").Value = 1;
+            uspv_StudentuGrupesDalykai.ParamByName("@piPriskirtiGrupe").Value = 0;
             uspv_StudentuGrupesDalykai.ParamByName("@piStudentuGrupesId").Value = StudentuGrupesId;
             return uspv_StudentuGrupesDalykai.Open();
         }
@@ -75,6 +75,7 @@ namespace Akademine_IS
                 uspi_StudentuGrupesStudentai.ParamByName("@piStdDalykoId").Value = StdDalykoId;
 
                 uspi_StudentuGrupesStudentai.Execute();
+                PriskirtiStudentoGrupesDalykusGridView.DataSource = GetStudentai(std);
             }
         }
 
@@ -95,9 +96,10 @@ namespace Akademine_IS
                         int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
                         int StudentuGrupesId = Convert.ToInt32(drv.Row["StudentuGrupesId"]);
                         t_StoredProc uspd_StudentuGrupesDalykai = new t_StoredProc(dh, "uspd_StudentuGrupesDalykai");
-                        uspd_StudentuGrupesDalykai.ParamByName("@piStudentuGrupesId").Value = Id;
-                        uspd_StudentuGrupesDalykai.ParamByName("@piStudentoId").Value = StudentuGrupesId;
+                        uspd_StudentuGrupesDalykai.ParamByName("@piStdDalykoId").Value = Id;
+                        uspd_StudentuGrupesDalykai.ParamByName("@piStudentuGrupesId").Value = StudentuGrupesId;
                         uspd_StudentuGrupesDalykai.Execute();
+                        PriskirtiStudentoGrupesDalykusGridView.DataSource = GetStudentai(Id);
                     }
                 }
             }
@@ -105,7 +107,7 @@ namespace Akademine_IS
 
         private void CloseForm_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void PriskirtiStudentoGrupesDalykusGridView_DoubleClick(object sender, EventArgs e)

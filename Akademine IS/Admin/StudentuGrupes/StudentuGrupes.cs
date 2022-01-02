@@ -71,7 +71,7 @@ namespace Akademine_IS
             DataRowView drv = ((DataTable)StudentuGrupesGridView.DataSource).DefaultView[StudentuGrupesGridView.SelectedCells[0].RowIndex];
             if (drv != null)
             {
-                if (drv.Row["StdDalykoId"] != null)
+                if (drv.Row["StudentuGrupesId"] != null)
                 {
                     int Id = Convert.ToInt32(drv.Row["StudentuGrupesId"]);
                     StudentuGrupesEdit ve = new StudentuGrupesEdit(dh, Id, user, usertype);
@@ -92,10 +92,11 @@ namespace Akademine_IS
                 {
                     if (drv.Row["StudentuGrupesId"] != null)
                     {
-                        int Id = Convert.ToInt32(drv.Row["StdDalykoId"]);
+                        int Id = Convert.ToInt32(drv.Row["StudentuGrupesId"]);
                         t_StoredProc uspd_StudentuGrupes = new t_StoredProc(dh, "uspd_StudentuGrupes");
-                        uspd_StudentuGrupes.ParamByName("@StudentuGrupesId").Value = Id;
+                        uspd_StudentuGrupes.ParamByName("@piStudentuGrupesId").Value = Id;
                         uspd_StudentuGrupes.Execute();
+                        StudentuGrupesGridView.DataSource = GetStudentuGrupes();
                     }
                 }
             }
@@ -128,7 +129,7 @@ namespace Akademine_IS
             DataRowView drv = ((DataTable)StudentuGrupesGridView.DataSource).DefaultView[StudentuGrupesGridView.SelectedCells[0].RowIndex];
             if (drv != null)
             {
-                if (drv.Row["StdDalykoId"] != null)
+                if (drv.Row["StudentuGrupesId"] != null)
                 {
                     int Id = Convert.ToInt32(drv.Row["StudentuGrupesId"]);
                     StudentuGrupesEdit ve = new StudentuGrupesEdit(dh, Id, user, usertype);

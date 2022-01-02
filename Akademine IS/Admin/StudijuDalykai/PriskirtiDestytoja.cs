@@ -72,6 +72,7 @@ namespace Akademine_IS
                 uspi_DestytojuPaskaitos.ParamByName("@piDestytojaiId").Value = AsmuoId;
 
                 uspi_DestytojuPaskaitos.Execute();
+                DestytojuPaskaitosGridView.DataSource = GetDestytojai(std);
             }
         }
         private void Istrinti_Click(object sender, EventArgs e)
@@ -89,6 +90,7 @@ namespace Akademine_IS
                         uspd_DestytojuPaskaitos.ParamByName("@piStdDalykoId").Value = Id;
                         uspd_DestytojuPaskaitos.ParamByName("@piDestytojaiId").Value = DestytojaiId;
                         uspd_DestytojuPaskaitos.Execute();
+                        DestytojuPaskaitosGridView.DataSource = GetDestytojai(Id);
                     }
                 }
             }
