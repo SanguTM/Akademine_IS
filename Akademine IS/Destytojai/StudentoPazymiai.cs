@@ -41,7 +41,7 @@ namespace Akademine_IS
             int i = 0;
             while (i < DestStudentoPazymiaiGridView.Columns.Count)
             {
-                if (DestStudentoPazymiaiGridView.Columns[i].Name.ToUpper().Equals("VERTINIMAS") || DestStudentoPazymiaiGridView.Columns[i].Name.ToUpper().Equals("DATA")
+                if (DestStudentoPazymiaiGridView.Columns[i].Name.ToUpper().Equals("VARTINIMAS") || DestStudentoPazymiaiGridView.Columns[i].Name.ToUpper().Equals("DATA")
                     || DestStudentoPazymiaiGridView.Columns[i].Name.ToUpper().Equals("PASTABA"))
                 {
                     DestStudentoPazymiaiGridView.Columns[i].Visible = true;
@@ -55,7 +55,7 @@ namespace Akademine_IS
 
             DestStudentoPazymiaiGridView.Columns[0].HeaderText = "Vertinimas";
             DestStudentoPazymiaiGridView.Columns[1].HeaderText = "Data";
-            DestStudentoPazymiaiGridView.Columns[1].HeaderText = "Pastaba";
+            DestStudentoPazymiaiGridView.Columns[2].HeaderText = "Pastaba";
 
         }
 

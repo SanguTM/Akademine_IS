@@ -39,7 +39,7 @@ namespace Akademine_IS
             int i = 0;
             while (i < StudPazymiaiGridView.Columns.Count)
             {
-                if (StudPazymiaiGridView.Columns[i].Name.ToUpper().Equals("VERTINIMAS") || StudPazymiaiGridView.Columns[i].Name.ToUpper().Equals("DATA")
+                if (StudPazymiaiGridView.Columns[i].Name.ToUpper().Equals("VARTINIMAS") || StudPazymiaiGridView.Columns[i].Name.ToUpper().Equals("DATA")
                     || StudPazymiaiGridView.Columns[i].Name.ToUpper().Equals("PASTABA") || StudPazymiaiGridView.Columns[i].Name.ToUpper().Equals("DESTYTOJAS"))
                 {
                     StudPazymiaiGridView.Columns[i].Visible = true;
@@ -53,8 +53,8 @@ namespace Akademine_IS
 
             StudPazymiaiGridView.Columns[0].HeaderText = "Vertinimas";
             StudPazymiaiGridView.Columns[1].HeaderText = "Data";
-            StudPazymiaiGridView.Columns[1].HeaderText = "Pastaba";
-            StudPazymiaiGridView.Columns[1].HeaderText = "Destytojas";
+            StudPazymiaiGridView.Columns[2].HeaderText = "Pastaba";
+            StudPazymiaiGridView.Columns[3].HeaderText = "Destytojas";
         }
     }
 }
